@@ -1,0 +1,292 @@
+/*
+****
+*****Template Name : Digital Ocean
+****
+*/
+
+/*===========
+===============CSS INDEX
+============*/
+
+@font-face {
+    font-family: 'sailecregular';
+    src: url('../fonts/sailec_regular-webfont.woff2') format('woff2'),
+        url('../fonts/sailec_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sailecbold';
+    src: url('../fonts/sailec_bold-webfont.woff2') format('woff2'),
+        url('../fonts/sailec_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sailecthin';
+    src: url('../fonts/sailec_thin-webfont.woff2') format('woff2'),
+        url('../fonts/sailec_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sailecmedium';
+    src: url('../fonts/sailec_medium-webfont.woff2') format('woff2'),
+        url('../fonts/sailec_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+/*
+****
+*****Base CSS
+****
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'sailecregular';
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input,
+select,
+textarea {
+    margin: 0;
+    border-radius: 0;
+    font: inherit;
+    font-size: 16px;
+    color: inherit;
+}
+
+
+
+
+
+/*
+****
+*****DO CSS
+****
+*/
+
+.do-area {
+    height: 100vh;
+    padding: 30px 0px 0px;
+    background-image: url(../images/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 100% 100%;
+}
+
+h1.logo {
+    max-width: 230px;
+}
+
+.do-text h3 {
+    font-family: 'sailecbold';
+    font-size: 55px;
+    color: #fff;
+    line-height: 55px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.do-text p {
+    font-family: 'sailecregular';
+    font-size: 16.5px;
+    line-height: 25px;
+    color: #bbd3fd;
+}
+
+.do-form-area {
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.do-form-area h4 {
+    font-family: 'sailecmedium';
+    font-size: 25px;
+    text-align: center;
+    color: #031b4e;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.btn-custom {
+    font-family: 'sailecbold';
+    width: 100%;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    background-color: #2C5AE9;
+}
+
+.btn-custom i {
+    padding-left: 6px;
+    font-weight: 300;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.btn-custom.btn-google {
+    font-family: 'sailecbold';
+    text-transform: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 0px 0px #DDD;
+    color: #757575;
+}
+
+.do-form-area p {
+    font-family: 'sailecthin';
+    font-size: 13px;
+    text-align: center;
+    font-weight: 300;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.btn-custom.btn-google img {
+    max-width: 20px;
+    display: inline-block;
+    float: left;
+    padding-top: 2px;
+}
+
+.footer-text {
+    margin: 0px;
+    padding: 0;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.footer-text > a {
+    font-family: 'sailecregular';
+    color: #fff;
+    font-size: 16px;
+    margin-left: 0px;
+    display: inline-block;
+    padding-right: 4px;
+}
+
+.do-form-area .form-group {
+    position: relative;
+}
+
+.do-form-area label {
+    font-family: 'sailecthin';
+    display: block;
+    font-size: 11px;
+    color: rgba(3, 27, 78, .7);
+    text-transform: capitalize;
+    font-weight: 700;
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    padding: 5px 11px 0px;
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(25%);
+}
+
+.do-form-area .form-control {
+    font-weight: 700;
+    font-family: 'sailecthin';
+    color: rgba(3, 27, 78, .7);
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    cursor: pointer;
+    height: 48px;
+}
+
+.foucs-content label {
+    transform: translateY(0);
+    color: #42547a;
+    opacity: 1;
+}
+
+
+
+.foucs-content input {
+
+    height: calc(3.25rem + 2px);
+}
+
+.form-group.foucs-content input {
+    padding-top: 16px;
+}
+
+.do-form-area .form-control:focus {
+    outline: 0px solid #2C5AE9;
+    border: 1px solid #2C5AE9;
+    box-shadow: 0 0 2px rgba(17, 169, 94, .5);
+    color: rgba(3, 27, 78, .7);
+
+}
+
+.do-form-area .form-control:focus ~ label {
+    color: #055eff;
+}
+
+
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 767px) {
+    .do-area {
+        height: auto;
+    }
+
+    .do-form-area {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .do-text h3 {
+        margin-top: 30px;
+    }
+
+    .footer-text {
+        position: inherit;
+    }
+}
