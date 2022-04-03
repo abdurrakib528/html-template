@@ -1,0 +1,169 @@
+/*
+****
+*****Template Name : Inferaccom
+****
+*/
+
+/*===========
+=======CSS INDEX
+============*/
+
+/*
+****
+*****Base CSS
+****
+*/
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro-Medium.eot');
+    src: url('../fonts/ApercuPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ApercuPro-Medium.woff2') format('woff2'),
+    url('../fonts/ApercuPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Apercu Pro';
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Apercu Pro';
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*
+****
+*****Template CSS
+****
+*/
+
+.type-form-area {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1.logo a {
+    display: block;
+    max-width: 200px;
+}
+
+.type-form-text-inner {
+    padding: 90px 0px;
+    text-align: center;
+}
+
+.type-form-text-inner h2 {
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.type-form-text-inner.slider-one h2 {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 55px;
+    margin-bottom: 55px;
+}
+
+.type-form-text-inner.slide-three h2 {
+    padding-bottom: 65px;
+}
+
+.type-form-text-inner p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0px;
+}
+
+.type-form-text-inner a.type-form-btn {
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+.type-form-text-inner a.type-form-btn i {
+    font-size: 18px;
+    padding-left: 5px;
+    transition: all .3s;
+}
+
+.type-form-text-inner a.type-form-btn:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.type-form-text-inner a.type-form-btn:hover i {
+    padding-left: 10px;
+}
+
+
+.type-form-text-slider.owl-carousel button.owl-dot {
+    width: 40px;
+    height: 6px;
+    background: #cecece;
+    display: inline-block;
+    transition: all .3s;
+    margin-left: 10px;
+    outline: none;
+}
+
+
+.type-form-text-slider .owl-dots {
+    position: absolute;
+    top: -55px;
+    right: 0px;
+}
+
+.type-form-text-slider.owl-carousel button.owl-dot.active {
+    background: #000;
+}
+
+.type-form-simple-button button {
+    background: #585858;
+    border: none;
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin-left: 12px;
+    font-size: 14px;
+    margin-right: 12px;
+}
