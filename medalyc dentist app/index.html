@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <title>Medalyc.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <!-- Header area start-->
+    <header class="header flex flex-center">
+      <div class="header__logo">
+        <a href="#">
+          <img src="./assets/images/logo.png" alt="Site logo" />
+        </a>
+      </div>
+      <div class="header__search">
+        <ul class="header__search-wrapper flex flex-center">
+          <li class="header__search--item">
+            <a href="#" class="header__search--link flex flex-center">
+              <span class="material-icons-outlined"> biotech </span>
+              Dermatologist
+            </a>
+          </li>
+          <li class="header__search--item">
+            <a href="#" class="header__search--link flex flex-center">
+              <span class="material-icons-outlined"> place </span>
+              Jeddah
+            </a>
+          </li>
+          <li class="header__search--item">
+            <a href="#" class="header__search--link flex flex-center">
+              <span class="material-icons-outlined"> calendar_month </span>
+              Jan, 31 - Feb, 15
+            </a>
+          </li>
+          <li class="header__search--item">
+            <a href="#" class="header__search--link flex flex-center">
+              <span class="material-icons-outlined"> privacy_tip </span>
+              All Insurances
+            </a>
+          </li>
+          <li class="header__search--item">
+            <a href="#" class="header__search--icon flex flex-center">
+              <span class="material-icons-outlined"> manage_search </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__right flex">
+        <div class="header__right--lang flex flex-center dropdown-with-value">
+          <span class="material-icons-outlined"> language </span>
+          <input
+            class="dropdown-input"
+            type="text"
+            placeholder="Eng"
+            readonly
+          />
+          <div class="dropdown-options">
+            <div onclick="show('Eng')">English</div>
+            <div onclick="show('Ara')">Arabic</div>
+          </div>
+          <span class="material-icons-outlined dropdown-icon">
+            expand_more
+          </span>
+        </div>
+        <div class="header__right--menu flex flex-center dropdown">
+          <span class="material-icons-outlined"> menu </span>
+          <img src="./assets/images/photo.jpg" alt="Profile image" />
+          <div class="dropdown-options">
+            <div>Profile Setting</div>
+            <div>History</div>
+            <div>Logout</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end-->
+    <!-- Breadcrumb area start -->
+    <div class="breadcrumb desktop">
+      <div class="breadcrumb__left">
+        <h1 class="title">204 provider available</h1>
+        <p class="subtitle">Around your location</p>
+      </div>
+      <div class="breadcrumb__right">
+        <div class="dropdown-with-select flex flex-center">
+          <span class="material-icons-outlined"> stacked_bar_chart </span>
+          <input
+            class="dropdown-input-select"
+            type="text"
+            placeholder="Short By"
+            readonly
+          />
+          <div class="dropdown-options">
+            <div onclick="showSelectValue('Test 1')">Test One</div>
+            <div onclick="showSelectValue('Test 2')">Test Two</div>
+            <div onclick="showSelectValue('Test 4')">Test 3</div>
+          </div>
+          <span class="material-icons-outlined dropdown-icon">
+            expand_more
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="breadcrumb mobile">
+      <div class="breadcrumb__left">
+        <h1 class="title">204 providers</h1>
+      </div>
+      <div class="breadcrumb__right">
+        <div class="dropdown-with-select flex flex-center">
+          <span class="material-icons-outlined"> stacked_bar_chart </span>
+          <input
+            class="dropdown-input-select"
+            type="text"
+            placeholder="Short By"
+            readonly
+            style="display: none"
+          />
+          <div class="dropdown-options">
+            <div onclick="showSelectValue('Test 1')">Test One</div>
+            <div onclick="showSelectValue('Test 2')">Test Two</div>
+            <div onclick="showSelectValue('Test 4')">Test 3</div>
+          </div>
+        </div>
+        <div class="header--filter flex flex-center">
+          <span class="material-icons-outlined"> filter_alt </span>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb area end -->
+    <!-- Content are start -->
+    <main class="main">
+      <div class="main__sidebar">
+        <div class="sidebar--offer">
+          <button type="button" class="btn btn-bg">
+            <span class="btn-title flex flex-center">
+              <span class="material-icons-outlined"> card_giftcard </span>
+              See related Offers
+              <span class="material-icons-outlined"> navigate_next </span>
+            </span>
+            <span class="btn-subtitle">250 offers around your location</span>
+          </button>
+        </div>
+        <div class="siderbar--accordion">
+          <div class="accaccordionordion-header flex flex-center">
+            <div class="header--filter flex flex-center">
+              <span class="material-icons-outlined"> filter_alt </span>
+              Filter
+            </div>
+            <div class="header--reset flex flex-center">
+              <span class="material-icons-outlined"> restart_alt </span>
+              Reset
+            </div>
+          </div>
+          <div class="accordion">
+            <input
+              type="radio"
+              id="allCity"
+              name="accordion"
+              checked="checked"
+            />
+            <label class="accordion-item" for="allCity">
+              <div class="accordion-title">All-City (Jeddah)</div>
+              <div class="accordion-content">
+                <p>
+                  <input
+                    type="radio"
+                    id="all-city"
+                    name="radio-group"
+                    checked
+                  />
+                  <label for="all-city">All-City (Jeddah)</label>
+                </p>
+                <p>
+                  <input type="radio" id="5Km" name="radio-group" />
+                  <label for="5Km">5 Kms</label>
+                </p>
+                <p>
+                  <input type="radio" id="10km" name="radio-group" />
+                  <label for="10km">10km</label>
+                </p>
+                <p>
+                  <input type="radio" id="50km" name="radio-group" />
+                  <label for="50km">50 kms</label>
+                </p>
+                <p>
+                  <input type="radio" id="100km" name="radio-group" />
+                  <label for="100km">100 kms</label>
+                </p>
+                <p>
+                  <input type="radio" id="wide" name="radio-group" />
+                  <label for="wide">Nation-Wide</label>
+                </p>
+              </div>
+            </label>
+            <input type="radio" id="specialties" name="accordion" />
+            <label class="accordion-item" for="specialties">
+              <div class="accordion-title">Sub-specialties</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test1" name="radio-group" checked />
+                  <label for="test1">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test2" name="radio-group" />
+                  <label for="test2">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test3" name="radio-group" />
+                  <label for="test3">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="Place" name="accordion" />
+            <label class="accordion-item" for="Place">
+              <div class="accordion-title">Place</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test11" name="radio-group" checked />
+                  <label for="test11">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test21" name="radio-group" />
+                  <label for="test21">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test31" name="radio-group" />
+                  <label for="test31">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="Rank" name="accordion" />
+            <label class="accordion-item" for="Rank">
+              <div class="accordion-title">Rank</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test12" name="radio-group" checked />
+                  <label for="test12">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test22" name="radio-group" />
+                  <label for="test22">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test32" name="radio-group" />
+                  <label for="test32">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="Rating" name="accordion" />
+            <label class="accordion-item" for="Rating">
+              <div class="accordion-title">Rating</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test13" name="radio-group" checked />
+                  <label for="test1">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test23" name="radio-group" />
+                  <label for="test23">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test33" name="radio-group" />
+                  <label for="test33">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="fees" name="accordion" />
+            <label class="accordion-item" for="fees">
+              <div class="accordion-title">Examination Fees</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test14" name="radio-group" checked />
+                  <label for="test14">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test24" name="radio-group" />
+                  <label for="test24">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test34" name="radio-group" />
+                  <label for="test34">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="Title" name="accordion" />
+            <label class="accordion-item" for="Title">
+              <div class="accordion-title">Title</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test15" name="radio-group" checked />
+                  <label for="test15">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test25" name="radio-group" />
+                  <label for="test25">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test35" name="radio-group" />
+                  <label for="test35">Orange</label>
+                </p>
+              </div>
+            </label>
+
+            <input type="radio" id="Gender" name="accordion" />
+            <label class="accordion-item" for="Gender">
+              <div class="accordion-title">Gender</div>
+              <div class="accordion-content">
+                <p>
+                  <input type="radio" id="test16" name="radio-group" checked />
+                  <label for="test16">Apple</label>
+                </p>
+                <p>
+                  <input type="radio" id="test26" name="radio-group" />
+                  <label for="test26">Peach</label>
+                </p>
+                <p>
+                  <input type="radio" id="test36" name="radio-group" />
+                  <label for="test36">Orange</label>
+                </p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="main__content">
+        <div class="content">
+          <div class="content__body">
+            <div class="content__body--img">
+              <span class="material-icons-outlined"> video_call </span>
+              <img src="./assets/images/photo.jpg" alt="Photo" />
+            </div>
+            <div class="content__body--info">
+              <div class="info__top flex flex-center">
+                <div class="info__top--left flex flex-center">
+                  <p class="top__box expert flex flex-center">
+                    <span class="material-icons-outlined"> verified </span>
+                    expert
+                  </p>
+                  <p class="top__box star flex flex-center">
+                    <span class="material-icons-outlined"> star </span>
+                    4.8
+                  </p>
+                  <p class="top__box">(346 reviews)</p>
+                </div>
+                <div class="info__top--right flex flex-center">
+                  <span class="material-icons-outlined"> difference </span>
+                  <h3 class="md-title">Compare</h3>
+                </div>
+              </div>
+              <h1 class="title">Dr. George Orwel</h1>
+              <h3 class="title-icon flex flex-center">
+                <span class="material-icons-outlined">
+                  medical_information
+                </span>
+                Dermatologist
+              </h3>
+              <p class="subtitle">
+                Professor of dermatology at Cambridge medical school.
+              </p>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> group </span>
+                  <span>345 Patient</span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> local_offer </span>
+                  <span>300 SAR - <strong>250 SAR</strong></span>
+                </div>
+              </div>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> cabin </span>
+                  <span> <strong>ABC advanced clinic</strong></span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> place </span>
+                  <span>Jeddah - KSA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__footer compact flex flex-center">
+            <div class="conent__footer--left flex flex-center">
+              <span class="material-icons-outlined"> calendar_month </span>
+              Available from:
+              <span>Jan 31, 9 am</span>
+              <span class="material-icons-outlined mobile">
+                navigate_next
+              </span>
+            </div>
+            <div class="conent__footer--right">
+              <button
+                id="full_schedule"
+                type="button"
+                class="btn btn-blue-bg flex flex-center desktop"
+                onClick="openSchedule(this)"
+              >
+                See Full Schedule
+                <span class="material-icons-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+              <button
+                id="full_schedule"
+                type="button"
+                class="mobile btn btn-blue-bg flex flex-center"
+                onClick="openSchedule(this)"
+              >
+                <span class="material-icons-outlined"> highlight_off </span>
+              </button>
+            </div>
+          </div>
+          <div class="content__footer expanded">
+            <div class="content__footer--top flex flex-center">
+              <div class="top__left flex flex-center">
+                In-clinic Visit
+                <div class="radio_container">
+                  <input type="radio" name="radio1" id="one" checked />
+                  <label for="one"
+                    ><span class="material-icons-outlined">
+                      business_center
+                    </span></label
+                  >
+                  <input type="radio" name="radio1" id="two" />
+                  <label for="two"
+                    ><span class="material-icons-outlined">
+                      video_call
+                    </span></label
+                  >
+                </div>
+                <p class="subtitle">Online Consultation</p>
+              </div>
+              <div class="top__right">
+                <button
+                  id="close_schedule"
+                  class="btn btn-outline flex flex-center"
+                  onClick="closeSchedule(this)"
+                >
+                  <span class="material-icons-outlined"> close </span>
+                  <h3 class="md-title">Close</h3>
+                </button>
+              </div>
+            </div>
+
+            <div class="content__footer--calendar">
+              <div class="calendar-days">
+                <div class="arrow disabled">
+                  <span class="material-icons-outlined"> chevron_left </span>
+                </div>
+                <div class="day current">
+                  Today
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Tomorrow
+                  <span>5</span>
+                </div>
+                <div class="day">
+                  Jan, 31
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,1
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,2
+                  <span>15</span>
+                </div>
+                <div class="arrow">
+                  <span class="material-icons-outlined"> chevron_right </span>
+                </div>
+              </div>
+              <div class="calendar-time">
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+              </div>
+              <div class="content__footer--bottom flex flex-center">
+                <p>*Choose a time slot to make a booking</p>
+                <a href="#" class="full-schedule flex flex-center">
+                  Click to see full schedule
+                  <span class="material-icons-outlined"> north_east </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content__body">
+            <div class="content__body--img">
+              <span class="material-icons-outlined"> video_call </span>
+
+              <img src="./assets/images/photo.jpg" alt="Photo" />
+            </div>
+            <div class="content__body--info">
+              <div class="info__top flex flex-center">
+                <div class="info__top--left flex flex-center">
+                  <p class="top__box expert">
+                    <span class="material-icons-outlined"> verified </span>
+
+                    expert
+                  </p>
+                  <p class="top__box star">
+                    <span class="material-icons-outlined"> star </span>
+                    4.8
+                  </p>
+                  <p class="top__box">(346 reviews)</p>
+                </div>
+                <div class="info__top--right flex flex-center">
+                  <span class="material-icons-outlined"> difference </span>
+                  <h3 class="md-title">Compare</h3>
+                </div>
+              </div>
+              <h1 class="title">Dr. George Orwel</h1>
+              <h3 class="title-icon">
+                <span class="material-icons-outlined">
+                  medical_information
+                </span>
+                Dermatologist
+              </h3>
+              <p class="subtitle">
+                Professor of dermatology at Cambridge medical school.
+              </p>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> group </span>
+                  <span>345 Patient</span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> local_offer </span>
+                  <span>300 SAR - <strong>250 SAR</strong></span>
+                </div>
+              </div>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> cabin </span>
+                  <span> <strong>ABC advanced clinic</strong></span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> place </span>
+                  <span>Jeddah - KSA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__footer compact flex flex-center">
+            <div class="conent__footer--left flex flex-center">
+              <span class="material-icons-outlined"> calendar_month </span>
+              Available from:
+              <span>Jan 31, 9 am</span>
+              <span class="material-icons-outlined mobile">
+                navigate_next
+              </span>
+            </div>
+            <div class="conent__footer--right">
+              <button
+                id="full_schedule"
+                type="button"
+                class="btn btn-blue-bg flex flex-center desktop"
+                onClick="openSchedule(this)"
+              >
+                See Full Schedule
+                <span class="material-icons-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+              <button
+                id="full_schedule"
+                type="button"
+                class="mobile btn btn-blue-bg flex flex-center"
+                onClick="openSchedule(this)"
+              >
+                <span class="material-icons-outlined"> highlight_off </span>
+              </button>
+            </div>
+          </div>
+          <div class="content__footer expanded">
+            <div class="content__footer--top flex flex-center">
+              <div class="top__left flex flex-center">
+                In-clinic Visit
+                <div class="radio_container">
+                  <input type="radio" name="radio2" id="one2" checked />
+                  <label for="one2">
+                    <span class="material-icons-outlined">
+                      business_center
+                    </span>
+                  </label>
+                  <input type="radio" name="radio2" id="two2" />
+                  <label for="two2">
+                    <span class="material-icons-outlined"> video_call </span>
+                  </label>
+                </div>
+                <p class="subtitle">Online Consultation</p>
+              </div>
+              <div class="top__right">
+                <button
+                  id="close_schedule"
+                  class="btn btn-outline flex flex-center"
+                  onClick="closeSchedule(this)"
+                >
+                  <span class="material-icons-outlined"> close </span>
+                  <h3 class="md-title">Close</h3>
+                </button>
+              </div>
+            </div>
+
+            <div class="content__footer--calendar">
+              <div class="calendar-days">
+                <div class="arrow disabled">
+                  <span class="material-icons-outlined"> chevron_left </span>
+                </div>
+                <div class="day current">
+                  Today
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Tomorrow
+                  <span>5</span>
+                </div>
+                <div class="day">
+                  Jan, 31
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,1
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,2
+                  <span>15</span>
+                </div>
+                <div class="arrow">
+                  <span class="material-icons-outlined"> chevron_right </span>
+                </div>
+              </div>
+              <div class="calendar-time">
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+              </div>
+              <div class="content__footer--bottom flex flex-center">
+                <p>*Choose a time slot to make a booking</p>
+                <a href="#" class="full-schedule flex flex-center">
+                  Click to see full schedule
+                  <span class="material-icons-outlined"> north_east </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content__body">
+            <div class="content__body--img">
+              <span class="material-icons-outlined"> video_call </span>
+              <img src="./assets/images/photo.jpg" alt="Photo" />
+            </div>
+            <div class="content__body--info">
+              <div class="info__top flex flex-center">
+                <div class="info__top--left flex flex-center">
+                  <p class="top__box expert flex flex-center">
+                    <span class="material-icons-outlined"> verified </span>
+                    expert
+                  </p>
+                  <p class="top__box star flex flex-center">
+                    <span class="material-icons-outlined"> star </span>
+                    4.8
+                  </p>
+                  <p class="top__box">(346 reviews)</p>
+                </div>
+                <div class="info__top--right flex flex-center">
+                  <span class="material-icons-outlined"> difference </span>
+                  <h3 class="md-title">Compare</h3>
+                </div>
+              </div>
+              <h1 class="title">Dr. George Orwel</h1>
+              <h3 class="title-icon flex flex-center">
+                <span class="material-icons-outlined">
+                  medical_information
+                </span>
+                Dermatologist
+              </h3>
+              <p class="subtitle">
+                Professor of dermatology at Cambridge medical school.
+              </p>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> group </span>
+                  <span>345 Patient</span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> local_offer </span>
+                  <span>300 SAR - <strong>250 SAR</strong></span>
+                </div>
+              </div>
+              <div class="meta__boxes flex">
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> cabin </span>
+                  <span> <strong>ABC advanced clinic</strong></span>
+                </div>
+                <div class="meta-box flex flex-center">
+                  <span class="material-icons-outlined"> place </span>
+                  <span>Jeddah - KSA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__footer compact flex flex-center">
+            <div class="conent__footer--left flex flex-center">
+              <span class="material-icons-outlined"> calendar_month </span>
+              Available from:
+              <span>Jan 31, 9 am</span>
+              <span class="material-icons-outlined mobile">
+                navigate_next
+              </span>
+            </div>
+            <div class="conent__footer--right">
+              <button
+                id="full_schedule"
+                type="button"
+                class="btn btn-blue-bg flex flex-center desktop"
+                onClick="openSchedule(this)"
+              >
+                See Full Schedule
+                <span class="material-icons-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+              <button
+                id="full_schedule"
+                type="button"
+                class="mobile btn btn-blue-bg flex flex-center"
+                onClick="openSchedule(this)"
+              >
+                <span class="material-icons-outlined"> highlight_off </span>
+              </button>
+            </div>
+          </div>
+          <div class="content__footer expanded">
+            <div class="content__footer--top flex flex-center">
+              <div class="top__left flex flex-center">
+                In-clinic Visit
+                <div class="radio_container">
+                  <input type="radio" name="radio3" id="one3" checked />
+                  <label for="one3">
+                    <span class="material-icons-outlined">
+                      business_center
+                    </span>
+                  </label>
+                  <input type="radio" name="radio3" id="two3" />
+                  <label for="two3">
+                    <span class="material-icons-outlined"> video_call </span>
+                  </label>
+                </div>
+                <p class="subtitle">Online Consultation</p>
+              </div>
+              <div class="top__right">
+                <button
+                  id="close_schedule"
+                  class="btn btn-outline flex flex-center"
+                  onClick="closeSchedule(this)"
+                >
+                  <span class="material-icons-outlined"> close </span>
+                  <h3 class="md-title">Close</h3>
+                </button>
+              </div>
+            </div>
+
+            <div class="content__footer--calendar">
+              <div class="calendar-days">
+                <div class="arrow disabled">
+                  <span class="material-icons-outlined"> chevron_left </span>
+                </div>
+                <div class="day current">
+                  Today
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Tomorrow
+                  <span>5</span>
+                </div>
+                <div class="day">
+                  Jan, 31
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,1
+                  <span>15</span>
+                </div>
+                <div class="day">
+                  Feb,2
+                  <span>15</span>
+                </div>
+                <div class="arrow">
+                  <span class="material-icons-outlined"> chevron_right </span>
+                </div>
+              </div>
+              <div class="calendar-time">
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-yellow">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+                <button type="button" class="time bg-gray">9:00 AM</button>
+              </div>
+              <div class="content__footer--bottom flex flex-center">
+                <p>*Choose a time slot to make a booking</p>
+                <a href="#" class="full-schedule flex flex-center">
+                  Click to see full schedule
+                  <span class="material-icons-outlined"> north_east </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__right">
+        <img src="./assets/images/map.jpg" alt="Map" />
+      </div>
+    </main>
+    <!-- Content are end -->
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
