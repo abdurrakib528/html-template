@@ -1,0 +1,367 @@
+/*
+****
+*****Template Name : Invision
+****
+*/
+
+/*===========
+===============CSS INDEX 
+============*/
+
+/*
+****
+*****Base CSS
+****
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #434c5f;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0;
+}
+
+
+
+
+
+.invison-area {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.invision-left {
+    flex: 1;
+    position: relative;
+}
+
+.invision-right {
+    flex: 2.5;
+}
+
+.invision-content-wrap {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    padding: 30px 30px 0px;
+    z-index: 99;
+}
+
+.invision-slider {
+    height: 100vh;
+}
+
+.single-slides img {
+    height: 100%;
+    width: 100%;
+}
+
+.single-slides {
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.slider-content p {
+    font-size: 13px;
+    color: #d0d0d1;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+p.author {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-style: normal;
+    display: block;
+    margin-bottom: 20px;
+}
+
+p.author img {
+    display: block;
+    max-width: 110px;
+    padding-top: 5px;
+}
+
+.website-logo a.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+.invision-form-wrapper {
+    padding: 30px 30px 0px;
+}
+
+.login {
+    text-align: right;
+}
+
+.login span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #596377;
+}
+
+.login a {
+    border: 1px solid #cad0da;
+    color: #596377;
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 4px 20px;
+    margin-left: 12px;
+    transition: all .3s;
+}
+
+
+
+
+
+
+
+.invision-form-inner {
+    max-width: 40vw;
+    margin: 60px auto 0px;
+}
+
+.invision-form-inner h3 {
+    font-size: 24px;
+    color: #434c5f;
+    font-weight: 400;
+}
+
+.invision-form-inner form {
+    margin-top: 40px;
+}
+
+.invision-form-inner label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #434c5f;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 11px 0px;
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(25%);
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.invision-form-inner input {
+    font-size: 11x;
+    font-weight: 400;
+    display: block;
+    color: #6d7183;
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    cursor: pointer;
+    height: 48px;
+}
+
+.invision-form-inner input:focus {
+    box-shadow: none;
+    border-color: #ff3366;
+}
+
+.foucs-content label {
+    transform: translateY(0);
+    color: #42547a;
+    opacity: 1;
+}
+
+
+
+.foucs-content input {
+
+    height: calc(3.25rem + 2px);
+}
+
+.form-group.foucs-content input {
+    padding-top: 16px;
+}
+
+.form-control:focus ~ label {
+    color: #434c5f;
+    font-size: 10px;
+}
+
+
+button.btn.btn-custom {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #ff3366;
+    color: #fff;
+    border-radius: 30px;
+    width: 140px;
+    margin: 40px auto 25px;
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    transition: all .3s;
+    letter-spacing: 1px;
+}
+
+button.btn.btn-custom:hover {
+    border: 1px solid red;
+    background: #fff;
+    color: #000;
+}
+
+.login a:hover {
+    border-color: red;
+    color: red;
+}
+
+p.footer-text {
+    color: #8c96a9;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 400;
+}
+
+p.footer-text a {
+    color: #8c96a9;
+    text-decoration: underline;
+}
+
+.form-control {
+    height: calc(3rem + 2px);
+}
+
+.slider-content h5 {
+    color: #d0d0d1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.slider-content {
+    text-align: center;
+}
+
+.slider-content h3 {
+    font-size: 18px;
+    color: #d0d0d1;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+a.btn.btn-custom {
+    border: 1px solid #ff3366;
+    border-radius: 30px;
+    font-size: 10px;
+    color: #ff3366;
+    font-weight: 600;
+    padding: 7px 25px;
+    transition: all .3s;
+    margin: 0px 0px 20px;
+}
+
+a.btn.btn-custom:hover {
+    background: #ff3366;
+    color: #fff;
+}
+
+.slider-content {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 99;
+    padding: 20px;
+}
+
+.slide-content-btm h4 {
+    font-size: 10px;
+    color: #7f8088;
+    margin-bottom: 20px;
+}
+
+.slide-content-btm {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.invision-form-inner label.forgot-pass {
+    float: right;
+    text-transform: capitalize;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 767px) {
+    .invison-area {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .invision-left {
+        flex: 1 100%;
+        position: relative;
+    }
+
+    .invision-right {
+        flex: 1 100%;
+    }
+
+    .login {
+        text-align: center;
+    }
+
+    .invision-form-inner {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .invision-form-inner form {
+        margin-top: 20px;
+    }
+
+
+
+}
