@@ -1,0 +1,463 @@
+/*===========CSS Index============*/
+
+/*===========Base CSS======*/
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:200');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    margin: 0;
+    line-height: 23px;
+    background: #f2f2f2;
+    padding-top: 5px;
+}
+
+img {
+    max-height: auto;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+
+textarea {
+    overflow: auto;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a.orange {
+    color: #EF5B25;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+    {
+    outline-color: #4285F4
+}
+
+
+
+
+
+/*=========== Form CSS============*/
+
+.form-inner {
+    width: 800px;
+    margin: 30px auto 0px;
+}
+
+.form-left,
+.form-right {
+    float: left;
+    width: 400px;
+}
+
+
+.form-left {
+    background: rgb(113, 122, 151);
+    background: -moz-linear-gradient(top, rgb(113, 122, 151) 0%, rgb(231, 131, 114) 100%);
+    background: -webkit-linear-gradient(top, rgb(113, 122, 151) 0%, rgb(231, 131, 114) 100%);
+    background: linear-gradient(to bottom, rgb(113, 122, 151) 0%, rgb(231, 131, 114) 100%);
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: -1px 5px 8px #CDCDCD;
+    padding: 30px;
+    position: relative;
+}
+
+.form-left h2,
+.form-left ul {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color: #fff;
+}
+
+.form-left h2 {
+    font-size: 35px;
+    margin: 20px 0px;
+    display: block;
+}
+
+.form-left ul {
+    padding-left: 78px;
+}
+
+.form-left ul li {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify
+}
+
+.bottom-img {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+}
+
+.bottom-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-right {
+    background: #fff;
+    padding: 20px;
+    box-shadow: -1px 5px 8px #CDCDCD;
+    ;
+    border-radius: 0px 4px 4px 0px;
+    position: relative;
+}
+
+h1.postman-logo {
+    position: absolute;
+    top: -11%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+
+span.left-text,
+span.right-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+
+}
+
+span.left-text {
+    float: left;
+    width: 50%;
+}
+
+span.right-text {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.form-inner > p {
+    margin-bottom: 30px;
+    display: block;
+    overflow: hidden;
+}
+
+.form-inner p label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 12.5px;
+    color: #000;
+}
+
+.form-inner p input {
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    padding: 11px 10px;
+    border-radius: 4px;
+}
+
+.form-inner p {
+    margin-bottom: 20px;
+}
+
+p.trouble {
+    font-size: 12px;
+    margin: 0px 0px 17px;
+}
+
+.form-inner p input[type="submit"] {
+    background: #f47e24;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all .4s;
+    cursor: pointer;
+
+    display: block;
+    margin-top: 30px;
+}
+
+p.or span {
+    font-size: 11.80px;
+    background: #fff;
+    padding: 0px 10px;
+}
+
+p.or {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: -15px;
+}
+
+
+
+p.or:before,
+p.or:after {
+    position: absolute;
+    right: 37px;
+    width: 35%;
+    top: 50%;
+    height: 1px;
+    content: "";
+    background: #cdcd;
+    margin-top: 0.5px;
+}
+
+p.or:before {
+    right: auto;
+    left: 37px;
+}
+
+.form-inner p.google-signin input {
+    background: #4285f4;
+    border-radius: 0px 4px 4px 0px;
+    display: inline-block;
+    width: 87%;
+    float: right;
+    transition: all .4s;
+    display: block;
+    margin-top: 0px;
+}
+
+p.google-signin i {
+    float: left;
+    width: 13%;
+    background: #4285f4;
+    border-radius: 4px 0px 0px 4px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
+p.google-signin {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+p.terms {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.terms a {
+    color: #000;
+    font-weight: 700;
+}
+
+.form-inner p input:focus {
+    outline: 0px solid orange;
+    border-color: orange;
+}
+
+.form-inner p label span {
+    float: right;
+    text-transform: uppercase;
+    color: #555;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 18px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: orange;
+}
+
+label.checkbox-label input {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+span.checkmark {
+    margin-top: 6px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 7px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*=========== Hover CSS============*/
+
+a.orange:hover {
+    color: rgba(244, 126, 36, .8);
+}
+
+.form-inner p input[type="submit"]:hover {
+    background: rgba(244, 126, 36, .9);
+}
+
+.form-inner p.google-signin input[type="submit"]:hover {
+
+    background: rgba(66, 130, 244, .9);
+}
+
+
+
+
+
+/*=========== Responsive CSS============*/
+
+@media only screen and (max-width:767px) {
+
+    body {
+        padding: 10px;
+    }
+    p.enterprise-user.text-right {
+        text-align: center !important;
+        margin-bottom: 5px;
+    }
+    .form-inner {
+        width: auto;
+        margin: -15px auto 0px;
+    }
+    .form-left,
+    .form-right {
+        float: none;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+
+}
