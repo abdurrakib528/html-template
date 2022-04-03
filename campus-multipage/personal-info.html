@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Personal Information |....</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Main style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="campus-area">
+        <div class="campus-left">
+           <div class="author-name">
+                <h3>Business district center <span>Yerevan</span></h3>
+            </div>
+            <img src="assets/images/bg-1.jpg" alt="BG one">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto">
+                    <div class="campus-inner personal-info">
+                        <div class="campus-right">
+                            <h2 class="text-right"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></h2>
+                            <div class="campus-right-inner-text">
+                               <h3>Personal information</h3>
+                                <h5>Please complete or update below your personal information that will be used to contact you.</h5>
+                                <form action="index.html" method="post" class="signup-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Gender</label>
+                                             <div class="gender-box">
+                                                  <p>
+                                                    <input type="radio" id="man" name="radio-group" checked>
+                                                    <label for="man">Man</label>
+                                                  </p>
+                                                  <p>
+                                                    <input type="radio" id="women" name="radio-group">
+                                                    <label for="women">Women</label>
+                                                  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="f-name">Name</label>
+                                                <input type="text" id="f-name" placeholder="Anna">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="l-name">Surname</label>
+                                                <input type="text" id="l-name" placeholder="Sakunts">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="phone">Phone number</label>
+                                                <input type="tel" id="phone" placeholder="+374 00 59 88 45">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="email">E-mail</label>
+                                                <input type="email" id="email" placeholder="anna.sakunts@gmail.com">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="code">postal code</label>
+                                                <input type="tel" id="code" placeholder="0038">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="town">Country, city</label>
+                                                <input type="text" id="town" placeholder="Armenia, Yerevan">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="code1">Address</label>
+                                                <input type="tel" id="code1" placeholder="15, Bakunts street">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="town1">Skype ID</label>
+                                                <input type="text" id="town1" placeholder="anna.sakunts">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                            <p class="checkbox-para">
+                                                <label class="checkbox-label">I agree to share my information for the recruitment process.
+                                                  <input type="checkbox" checked="checked">
+                                                  <span class="checkmark"></span>
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 ml-auto">
+                                            <a href="education.html" class="continue-btn">Continue</a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    
+      <script>
+        $(document).ready(function() {
+
+            $highestBox = $('.campus-right').outerHeight();
+
+            $('.campus-left').css('height', $highestBox);
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

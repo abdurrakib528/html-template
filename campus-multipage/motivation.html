@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Motivation |....</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Main style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="campus-area">
+        <div class="campus-left">
+           <div class="author-name">
+                <h3>Business district center <span>Yerevan</span></h3>
+            </div>
+            <img src="assets/images/bg-1.jpg" alt="BG one">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto">
+                    <div class="campus-inner personal-info education motivation">
+                        <div class="campus-right">
+                            <h2 class="text-right"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></h2>
+                            <div class="campus-right-inner-text">
+                               <h3>Motivation</h3>
+                               <h5>We are happy to see you in the second stage of the interview process.  Now, it is the time for us to get to know you better. Try to be very honest answering the following questions. We value your skills, but we value honesty the most.</h5>
+                                <form action="index.html" method="post" class="signup-form">
+                                   <div class="row">
+                                       <div class="col-md-12">
+                                           <div class="motive-message">
+                                               <p>
+                                                   <textarea name="motive-text"></textarea>
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+
+                                            <a href="online-interview.html" class="continue-btn back">Previous</a>
+                                        </div>
+                                        <div class="col-md-4 ml-auto">
+                                            <a href="thankyou.html" class="continue-btn">Continue</a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $highestBox = $('.campus-right').outerHeight();
+
+            $('.campus-left').css('height', $highestBox);
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Education |....</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Main style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="campus-area">
+        <div class="campus-left">
+           <div class="author-name">
+                <h3>Business district center <span>Yerevan</span></h3>
+            </div>
+            <img src="assets/images/bg-1.jpg" alt="BG one">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto">
+                    <div class="campus-inner personal-info education">
+                        <div class="campus-right">
+                            <h2 class="text-right"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></h2>
+                            <div class="campus-right-inner-text">
+                               <h3>Education</h3>
+                                <h5>Please complete or update below information about your education.</h5>
+                                <form action="index.html" method="post" class="signup-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Degree</label>
+                                             <div class="gender-box">
+                                                  <p>                                       
+                                                    <input type="radio" id="bachelor" name="radio-group" checked>
+                                                    <label for="bachelor">Bachelor</label>
+                                                  </p>
+                                                  <p>
+                                                    <input type="radio" id="master" name="radio-group">
+                                                    <label for="master">Master</label>
+                                                  </p>
+                                                  <p>
+                                                    <input type="radio" id="phd" name="radio-group">
+                                                    <label for="phd">PhD</label>
+                                                  </p>
+                                                  <p>
+                                                    <input type="radio" id="nodiploma" name="radio-group">
+                                                    <label for="nodiploma">No diploma</label>
+                                                  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                <label for="university">University</label>
+                                                <input type="text" id="university" placeholder="French University in Armenia">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                <label for="d-title">Diploma title</label>
+                                                <input type="text" id="d-title" placeholder="Bachelor in marketing and communications">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="g-date">Graduation date</label>
+                                                <input type="tel" id="g-date" placeholder="09.05.12         ">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="town">Diploma skills</label>
+                                                <input type="text" id="town" placeholder="Select one or more skills">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="city">City</label>
+                                                <input type="text" id="city" placeholder="Yerevan">
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>
+                                                <label for="country">Country</label>
+                                                <input type="text" id="country" placeholder="Armenia">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+
+                                            <a href="personal-info.html" class="continue-btn back">Back</a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6 ml-auto">
+                                            <a href="online-interview.html" class="continue-btn">Continue</a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $highestBox = $('.campus-right').outerHeight();
+
+            $('.campus-left').css('height', $highestBox);
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
