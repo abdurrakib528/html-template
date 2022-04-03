@@ -1,0 +1,35 @@
+/*==== Brand Page CSS ====*/
+.brand-banner {
+    background-image: url(../images/brand/hero-banner.jpg);
+}
+
+.banner-info,
+.brand-info {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.brand-info {
+    height: 30vw;
+}
+
+@media (max-width: 767px) {
+
+    .spacer {
+        padding-left: 8vw;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+    }
+
+    .banner-info,
+    .brand-info {
+        height: 100vw;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+}

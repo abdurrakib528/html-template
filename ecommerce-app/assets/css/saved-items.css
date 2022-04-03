@@ -1,0 +1,149 @@
+.saved-header {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+}
+
+h2.saved-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #1d1d1d;
+}
+
+.saved-item-desc {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.create-acc {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.67;
+    position: relative;
+    color: #5f5f5f;
+    border: 1px solid #5f5f5f;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 4px;
+}
+
+a.create-acc:hover {
+    opacity: .7;
+}
+
+.heart-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    color: #000;
+    z-index: 999;
+    padding: 15px 20px;
+}
+
+.pro-img {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.pro-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.pro-img a {
+    display: block;
+    z-index: 2;
+}
+
+.pro-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    display: inline-block;
+    text-decoration: none;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+p.pro-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+.pro-meta {
+    padding: 15px 0px;
+}
+
+.pro-meta a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.47;
+    color: #1d1d1d;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .saved-item-desc {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    a.create-acc {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    p.saved-item-count {
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    p.saved-item-count {
+        text-align: left;
+    }
+
+    .pro-title {
+        font-size: 14px;
+    }
+
+    p.pro-price {
+        font-size: 12px;
+    }
+
+    .pro-meta a {
+        font-size: 13px;
+    }
+
+    .heart-icon {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
