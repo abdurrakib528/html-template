@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>STATISTIQUES</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+
+    <!--Header-->
+    <header class="header-area py-4 page2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <span class="left-angle"></span>
+                        </a>
+                        <h1>STATISTIQUES</h1>
+                        <a id="menubar" href="#">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-12">
+
+
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <ul class="nav nav-tabs border-tab">
+                                <li>
+                                    <a href="#revenus" data-toggle="tab" class="active">revenus</a>
+                                </li>
+                                <li>
+                                    <a href="#moyennes" data-toggle="tab">moyennes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-area">
+            <ul class="menu">
+                <li><a href="#">Analyses trafic</a></li>
+                <li><a href="#">Statistiques</a></li>
+                <li><a href="#">Programmes</a></li>
+                <li><a href="#">Mes athlètes</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Paramètres</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!--Header-->
+
+    <div class="panel panel-default">
+
+
+        <div class="panel-body  bg-dark-blue">
+            <div class="tab-content">
+                <div class="tab-pane active" id="revenus">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="top-links">
+                                    <a href="#">réel</a>
+                                    <a href="#" class="active">objectif</a>
+                                </div>
+
+                                <div class="panel panel-default mt-30">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <ul class="nav nav-tabs circle-tab mb-20">
+                                                <li>
+                                                    <a href="#jour" data-toggle="tab">jour</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#semaine" data-toggle="tab">semaine</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#mois" data-toggle="tab" class="active">mois</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#année" data-toggle="tab">année</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Graph Area-->
+                    <div class="graph-area bg-dark-blue">
+                        <canvas id="myChart" height="100"></canvas>
+                    </div>
+                    <!--Graph Area-->
+
+
+                    <!--Content Area-->
+                    <div class="content-area bg-light-blue">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content-inner">
+
+
+
+
+                                        <!--Tab start-->
+
+                                        <div id="september">
+                                            <h2 class="subtitle">Septembre</h2>
+                                            <div class="table-box align-items-center row text-center">
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Total</p>
+                                                    <p class="fontbold">€5.528,00</p>
+                                                </div>
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Clients</p>
+                                                    <p class="fontlight">5</p>
+                                                </div>
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Écart</p>
+                                                    <p class="site-btn fontlight btn-bg">-72,00€</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="table-box align-items-center table2 text-center row mt-20">
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Produit</p>
+                                                    <p class="fontlight">OFFRE 1</p>
+                                                    <p class="fontlight">OFFRE 2</p>
+                                                    <p class="fontlight">OFFRE 3</p>
+                                                    <p class="fontlight">PROGRAMMES</p>
+                                                </div>
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Clients</p>
+                                                    <p class="fontlight">1</p>
+                                                    <p class="fontlight">0</p>
+                                                    <p class="fontlight">0</p>
+                                                    <p class="fontlight">0</p>
+                                                </div>
+                                                <div class="col-4 table-body">
+                                                    <p class="heading">Total</p>
+                                                    <p class="fontlight">€500,00</p>
+                                                    <p class="fontlight">€0,00</p>
+                                                    <p class="fontlight">€0,00</p>
+                                                    <p class="fontlight">€0,00</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="conversion-bars">
+                                                <div class="single-bar mt-30">
+                                                    <div class="svg-chart">
+                                                        <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+                                                            <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+                                                            <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8"></circle>
+                                                            <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+                                                            <g class="donut-text">
+
+                                                                <text y="50%" transform="translate(0, 2)">
+                                                                    <tspan x="50%" text-anchor="middle" class="donut-percent">60%</tspan>
+                                                                </text>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="bar-content">
+                                                        <h3>conversion <span>visiteurs/inscriptions</span></h3>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <div class="conversion-table">
+                                                            <p class="heading">Visites</p>
+                                                            <p class="fontlight">100</p>
+                                                        </div>
+                                                        <div class="conversion-table">
+                                                            <p class="heading">Inscriptions</p>
+                                                            <p class="fontlight">60</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="single-bar mt-30">
+                                                    <div class="svg-chart">
+                                                        <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+                                                            <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+                                                            <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8"></circle>
+                                                            <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8" stroke-dasharray="80 20" stroke-dashoffset="25"></circle>
+                                                            <g class="donut-text">
+
+                                                                <text y="50%" transform="translate(0, 2)">
+                                                                    <tspan x="50%" text-anchor="middle" class="donut-percent">80%</tspan>
+                                                                </text>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="bar-content">
+                                                        <h3>transformation <span>activations/clients</span></h3>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <div class="conversion-table">
+                                                            <p class="heading">Clients</p>
+                                                            <p class="fontlight">30</p>
+                                                        </div>
+                                                        <div class="conversion-table">
+                                                            <p class="heading">Achats</p>
+                                                            <p class="fontlight">24</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Tab end-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="moyennes">
+                    <!--Content Area-->
+                    <div class="content-area bg-light-blue">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content-inner">
+
+                                        <div class="pricing-box">
+                                            <p>Mes revenus mensuels moyens</p>
+                                            <h3>€4.200,00/mois</h3>
+                                        </div>
+
+                                        <div class="table-box align-items-center table2 text-center row mt-20">
+                                            <div class="col-4 table-body">
+                                                <p class="heading">Produit</p>
+                                                <p class="fontlight">OFFRE 1</p>
+                                                <p class="fontlight">OFFRE 2</p>
+                                                <p class="fontlight">OFFRE 3</p>
+                                                <p class="fontlight">PROGRAMMES</p>
+                                            </div>
+                                            <div class="col-4 table-body">
+                                                <p class="heading">Clients</p>
+                                                <p class="fontlight">1</p>
+                                                <p class="fontlight">0</p>
+                                                <p class="fontlight">0</p>
+                                                <p class="fontlight">0</p>
+                                            </div>
+                                            <div class="col-4 table-body">
+                                                <p class="heading">Total</p>
+                                                <p class="fontlight">€500,00</p>
+                                                <p class="fontlight">€0,00</p>
+                                                <p class="fontlight">€0,00</p>
+                                                <p class="fontlight">€0,00</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="conversion-bars">
+                                            <div class="single-bar mt-30">
+                                                <div class="svg-chart">
+                                                    <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+                                                        <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+                                                        <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8"></circle>
+                                                        <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+                                                        <g class="donut-text">
+
+                                                            <text y="50%" transform="translate(0, 2)">
+                                                                <tspan x="50%" text-anchor="middle" class="donut-percent">60%</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="bar-content">
+                                                    <h3>conversion <span>visiteurs/inscriptions</span></h3>
+                                                </div>
+                                                <div class="table-box">
+                                                    <div class="conversion-table">
+                                                        <p class="heading">Visites</p>
+                                                        <p class="fontlight">100</p>
+                                                    </div>
+                                                    <div class="conversion-table">
+                                                        <p class="heading">Inscriptions</p>
+                                                        <p class="fontlight">60</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-bar mt-30">
+                                                <div class="svg-chart">
+                                                    <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+                                                        <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+                                                        <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8"></circle>
+                                                        <circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="8" stroke-dasharray="80 20" stroke-dashoffset="25"></circle>
+                                                        <g class="donut-text">
+
+                                                            <text y="50%" transform="translate(0, 2)">
+                                                                <tspan x="50%" text-anchor="middle" class="donut-percent">80%</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="bar-content">
+                                                    <h3>transformation <span>activations/clients</span></h3>
+                                                </div>
+                                                <div class="table-box">
+                                                    <div class="conversion-table">
+                                                        <p class="heading">Clients</p>
+                                                        <p class="fontlight">30</p>
+                                                    </div>
+                                                    <div class="conversion-table">
+                                                        <p class="heading">Achats</p>
+                                                        <p class="fontlight">24</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content Area-->
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/datagraph.js"></script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

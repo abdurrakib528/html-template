@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ANALYSES TRAFIC</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+
+    <!--Header-->
+    <header class="header-area border-btm py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <span class="left-angle"></span>
+                        </a>
+                        <h1>ANALYSES TRAFIC</h1>
+                        <a id="menubar" href="#">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-area">
+            <ul class="menu">
+                <li><a href="#">Analyses trafic</a></li>
+                <li><a href="#">Statistiques</a></li>
+                <li><a href="#">Programmes</a></li>
+                <li><a href="#">Mes athlètes</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Paramètres</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!--Header-->
+
+
+    <!--Content Area-->
+    <div class="content-area bg-light-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-inner">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <ul class="nav nav-tabs border-tab">
+                                        <li class="">
+                                            <a href="#clients" data-toggle="tab" class="active">clients</a>
+                                        </li>
+                                        <li>
+                                            <a href="#inscriptions" data-toggle="tab">inscriptions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="clients">
+                                        <h2 class="subtitle">Tranche d’âge</h2>
+                                        <ul class="tab-list mb-25">
+                                            <li>
+                                                <span class="leftvalue">18-24</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar one" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">25-34</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar two" style="width: 60%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">25%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">35-44</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar three" style="width: 65%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">30%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">45-54</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar four" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">+55</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar five" style="width: 25%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">5%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <div class="panel-header mb-25">
+
+                                                        <h2 class="subtitle no-mb">Genre</h2>
+                                                        <ul class="nav nav-tabs noborder-tab">
+                                                            <li class="">
+                                                                <a href="#tout" data-toggle="tab" class="active">Tout</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#femmes" data-toggle="tab">Femmes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#hommes" data-toggle="tab">Hommes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tout">
+                                                        <div class="cirle-chart">
+                                                            <h3>
+                                                                <span class="iblue">70%</span>
+                                                                Femmes
+                                                            </h3>
+                                                            <div class="chart">
+                                                                <svg viewBox="-10 -10 20 20" class="chart">
+                                                                    <path id='femme' d='' fill='#03B3BB'></path>
+                                                                    <path id='homme' d='' fill='#101D26'></path>
+                                                                </svg>
+                                                            </div>
+
+                                                            <h3>
+                                                                <span class="iblue">30%</span>
+                                                                Hommes
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="femmes">
+                                                        <h2>femmes</h2>
+                                                    </div>
+                                                    <div class="tab-pane" id="hommes">
+                                                        <h2>hommes</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h2 class="subtitle mt-25">Villes</h2>
+                                        <ul class="tab-list citytab">
+                                            <li>
+                                                <span class="leftvalue">Paris</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar one" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Boullogne</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar two" style="width: 60%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">25%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Issy les…</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar three" style="width: 65%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">30%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Courbevoie</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar four" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Asnières</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar five" style="width: 25%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">5%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="tab-pane" id="inscriptions">
+                                        <h2 class="subtitle">Tranche d’âge</h2>
+                                        <ul class="tab-list mb-25">
+                                            <li>
+                                                <span class="leftvalue">18-24</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar one" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">25-34</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar two" style="width: 60%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">25%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">35-44</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar three" style="width: 65%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">30%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">45-54</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar four" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">+55</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar five" style="width: 25%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">5%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <div class="panel-header mb-25">
+
+                                                        <h2 class="subtitle no-mb">Genre</h2>
+                                                        <ul class="nav nav-tabs noborder-tab">
+                                                            <li class="">
+                                                                <a href="#tout" data-toggle="tab" class="active">Tout</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#femmes" data-toggle="tab">Femmes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#hommes" data-toggle="tab">Hommes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tout">
+                                                        <div class="cirle-chart">
+                                                            <h3>
+                                                                <span class="iblue">70%</span>
+                                                                Femmes
+                                                            </h3>
+                                                            <div class="chart">
+                                                                <svg viewBox="-10 -10 20 20" class="chart">
+                                                                    <path id='femme1' d='' fill='#03B3BB'></path>
+                                                                    <path id='homme1' d='' fill='#101D26'></path>
+                                                                </svg>
+                                                            </div>
+
+                                                            <h3>
+                                                                <span class="iblue">30%</span>
+                                                                Hommes
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="femmes">
+                                                        <h2>femmes</h2>
+                                                    </div>
+                                                    <div class="tab-pane" id="hommes">
+                                                        <h2>hommes</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h2 class="subtitle mt-25">Villes</h2>
+                                        <ul class="tab-list citytab">
+                                            <li>
+                                                <span class="leftvalue">Paris</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar one" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Boullogne</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar two" style="width: 60%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">25%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Issy les…</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar three" style="width: 65%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">30%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Courbevoie</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar four" style="width: 40%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">15%</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="leftvalue">Asnières</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar five" style="width: 25%" aria-valuenow="100"></div>
+                                                    <span class="rightvalue">5%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Content Area-->
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/chart.js"></script>
+
+
+
+</body>
+
+</html>
