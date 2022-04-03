@@ -1,0 +1,266 @@
+:root {
+
+    --background-grey: #FAFAFA;
+    --outline-grey: #C1C1C1;
+    --black: #000000;
+    --white: #FFFFFF;
+    --menu-grey: #EFEFEF;
+    --service-green: #7DC836;
+    --keypad-bg: #D1D1D1;
+    --shadow-color: #00000029;
+
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+input,
+button {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+}
+
+button * {
+    pointer-events: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: ;
+    line-height: 1.8;
+    margin: 100px;
+
+}
+
+
+.app-container {
+    width: 340px;
+    background: var(--white);
+    margin: 0 auto;
+    box-shadow: 0px 3px 10px var(--shadow-color);
+    border: 1px solid var(--outline-grey);
+}
+
+
+
+
+
+
+/*=====App Header CSS====*/
+
+.app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--background-grey);
+}
+
+.select-wrapper {
+    width: 100%;
+    color: var(--black);
+}
+
+.dropholder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    background: var(--white);
+    border: 1px solid var(--outline-grey);
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 25px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.select-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 28px;
+    height: 100%;
+    background: var(--menu-grey);
+    cursor: pointer;
+    z-index: -1;
+    text-align: center;
+}
+
+.dropdown.active + .dropdownOption {
+    display: block;
+}
+
+.dropdownOption {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: none;
+    width: 100%;
+    background: var(--white);
+    margin: 0 auto;
+    box-shadow: 0px 3px 10px var(--shadow-color);
+    border: 1px solid var(--outline-grey);
+    list-style: none;
+    border-radius: 4px;
+}
+
+.dropdownOption li {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--black);
+    padding: 3px;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+
+
+}
+
+
+.current {
+    background: var(--menu-grey);
+}
+
+.dropdown:before,
+.dropdownOption li:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: url(../images/dot.svg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    border-radius: 50%;
+}
+
+.dropdownOption li.current:before {
+
+    background: url(../images/dot.svg);
+}
+
+.dropdownOption li:before {
+
+    background: url(../images/dot2.svg);
+}
+
+
+
+
+
+/*=====Output CSS====*/
+.app-output {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    height: 75px;
+    border-top: 1px solid var(--outline-grey);
+    border-bottom: 1px solid var(--outline-grey);
+}
+
+.app-output input {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border: transparent;
+    color: var(--black);
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*=====Keypad CSS====*/
+
+.app-keypad {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    width: 100%;
+    grid-gap: 8px;
+    padding: 20px;
+}
+
+.app-keypad button {
+    border-radius: 6px;
+    border: transparent;
+    background: var(--keypad-bg);
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px 2px;
+}
+
+.app-keypad button img {
+    width: 100%;
+    height: 100%;
+}
+
+button.call {
+    background-color: var(--service-green);
+}
+
+button.cross img {
+    width: 20px;
+}
+
+button.call img {
+    width: 20px;
+}
+
+
+.dialpad.empty {
+    background: transparent;
+    user-select: inherit;
+    opacity: 0;
+    visibility: hidden;
+}
