@@ -1,0 +1,108 @@
+/* Mobile Layout */
+
+@media only screen and (max-width: 767px) {
+    .flex-grid {
+        display: block;
+    }
+
+    .col-custom-7 {
+        flex: 100%;
+    }
+
+    .tab-header h3 i {
+        display: none;
+    }
+
+    .tab-header h3 {
+        padding-left: 20px;
+    }
+
+
+    .menu-trigger {
+        position: absolute;
+        left: 10px;
+        top: 9px;
+        z-index: 9999;
+        display: block;
+    }
+    .tab-header a > i{
+        font-size: 18px;
+    }
+    .menu-trigger a i {
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .left-menu {
+        left: -100%;
+        z-index: 9999;
+        top: 0px;
+        transition: all .4s ease-in;
+    }
+
+    .left-menu.in {
+        left: 0px;
+    }
+
+    .left-menu .feedback {
+        padding-top: 180px;
+    }
+
+    .tutorial-content {
+        max-width: 100%;
+        margin-top: 0px;
+    }
+
+    .tab-header h3 a {
+        font-size: 14px;
+    }
+
+.tab-header a {
+    font-size: 14px;
+}
+
+    .canvas-blur.in-blur {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+    .next-page-btn,
+    .prev-page-btn {
+        right: 8px;
+        bottom: 8px;
+    }
+
+    .prev-page-btn {
+        right: auto;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .tab-header {
+        width: 100%;
+    }
+
+
+    .tab-content-inner ul {
+        padding-left: 14px;
+    }
+
+    .tutorial-content ul li i {
+        font-size: 14px;
+        padding-right: 4px;
+    }
+
+    .tutorial-footer.full-width p input {
+        width: 250px;
+    }
+
+
+
+
+
+
+}

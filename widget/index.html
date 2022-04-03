@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Tracker</title>
+    <link rel="stylesheet" href="./app.css">
+
+</head>
+
+<body>
+
+    <div class="w-full lg:max-w-max lg:mx-auto mt-5">
+        <!-- App inner start here -->
+        <div class="bg-bg1 2xl:p-8 xl:p-6 md:p-3 p-2 w-full h-fit md:rounded-3xl border-4 border-bordercolor font-sans">
+            <!-- App Claim start here -->
+            <div
+                class="shadow-outset bg-bg2 w-full h-full rounded-full grid grid-cols-5 gap-2 xl:gap-[0.875rem] overflow-hidden border-[0.5rem] lg:border-[0.875rem] border-bg2">
+                <div class="box-animation bg-bg3 box-style box-rounded">
+                    <h3 class="box-title-style ">
+                        Claim
+                        filled</h3>
+                </div>
+
+                <div class="box-animation bg-bg3 box-style">
+                    <h3 class="box-title-style">
+                        Claim
+                        under review</h3>
+                </div>
+                <div class="box-animation bg-bg3 box-style">
+                    <h3 class="box-title-style">
+                        Adjudication in progress</h3>
+                </div>
+                <div class="box-style box-animation bg-bg3">
+                    <h3 class="box-title-style">
+                        Claim
+                        approved</h3>
+                </div>
+                <div class="box-animation bg-bg3 box-style box-rounded-right">
+                    <h3 class="box-title-style">
+                        Claim
+                        paid</h3>
+                </div>
+
+
+            </div>
+            <!-- App Claim end here -->
+
+            <!-- App Radio start here -->
+            <div class="radio-area flex items-center gap-2 lg:gap-4 place-content-center mt-8 xl:mx-20 lg:mx-10">
+                <div class="flex-1 flex items-center justify-center">
+                    <input type="radio" id="absence" class="hidden" name="radio">
+                    <label for="absence" class="input-label-style">
+                        <span class="input-label-circle-style"></span>
+                        Absence
+                    </label>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <input type="radio" id="std" class="hidden" name="radio" checked>
+                    <label for="std" class="input-label-style">
+                        <span class="input-label-circle-style"></span>
+                        STD
+                    </label>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <input type="radio" id="ltd" class="hidden" name="radio">
+                    <label for="ltd" class="input-label-style">
+                        <span class="input-label-circle-style"></span>
+                        LTD
+                    </label>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <input type="radio" id="ci" class="hidden" name="radio">
+                    <label for="ci" class="input-label-style">
+                        <span class="input-label-circle-style"></span>
+                        CI
+                    </label>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <input type="radio" id="hi" class="hidden" name="radio">
+                    <label for="hi" class="input-label-style">
+                        <span class="input-label-circle-style"></span>
+                        HI
+                    </label>
+                </div>
+            </div>
+            <!-- App Radio end here -->
+
+        </div>
+        <!-- App inner end here -->
+
+    </div>
+</body>
+
+</html>
