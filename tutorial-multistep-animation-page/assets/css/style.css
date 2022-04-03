@@ -1,0 +1,544 @@
+/*
+****
+*****Template Name : Tutorial
+****
+*/
+
+
+/*===========
+=======CSS INDEX
+============*/
+
+
+
+/*
+****
+*****Base CSS
+****
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.list-dot {
+    list-style: circle;
+    padding-left: 65px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.flex-grid {
+    display: flex;
+}
+
+
+.col-custom-3 {
+    width: 255px;
+}
+
+.col-custom-7 {
+    flex: 2;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+.canvas-blur {
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 12;
+    transition: all .2s ease;
+}
+
+.tutorial-home-area {
+    position: relative;
+}
+
+.well p:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+/*
+****
+*****Tab Left CSS
+****
+*/
+
+
+.left-menu {
+    background: #f8f8f8;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: auto;
+    width: 255px;
+}
+
+.left-menu .feedback {
+    padding-top: 230px;
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+
+.left-menu .feedback a {
+    text-decoration: underline;
+    color: #777;
+}
+
+.left-menu .tabs-left > li {
+    float: none;
+    margin-bottom: 2px;
+    margin: 0px;
+}
+
+.left-menu .nav-tabs {
+    border: 0px solid;
+    counter-reset: step;
+}
+
+.left-menu .nav-tabs > li > a {
+    font-size: 15px;
+    color: #9e9e9e;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 16px;
+    padding-left: 50px !important;
+    border: 0px solid !important;
+}
+
+.left-menu .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #212121;
+    cursor: default;
+    background-color: #e0e0e0;
+    font-weight: 500;
+    border: 0px solid !important;
+}
+
+.left-menu .nav-tabs > li.activated > a,
+.nav-tabs > li.activated > a:focus,
+.nav-tabs > li.activated > a:hover {
+    color: #212121;
+    cursor: default;
+    font-weight: 500;
+    border: 0px solid !important;
+}
+
+.left-menu .nav-tabs li:before {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #9e9e9e;
+    content: "";
+    z-index: 99;
+    left: 28px;
+    top: -40px;
+}
+
+.left-menu .nav-tabs li:first-child:before {
+    content: none;
+}
+
+.left-menu .nav-tabs li:after {
+    position: absolute;
+    height: 100%;
+    border: 2px solid #9e9e9e;
+    content: counter(step);
+    counter-increment: step;
+    z-index: 999;
+    left: 15px;
+    top: 13px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    background: #f5f5f5;
+
+}
+
+.left-menu .nav-tabs li.active:before,
+.left-menu .nav-tabs li.activated:before {
+    border-left: 1px solid #212121;
+}
+
+.left-menu .nav-tabs li.active:after,
+.left-menu .nav-tabs li.activated:after {
+    border: 2px solid #212121;
+    color: #212121;
+}
+
+
+/*
+****
+*****Tab Right CSS
+****
+*/
+
+.right-content {
+    background: #f7f7f7 url(https://assets.ubuntu.com/v1/f8a323a7-image-background-paper.png) center top repeat-y;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tutorial-content {
+    box-shadow: 1px 1px 16px #ccc;
+    background: #fff;
+    max-width: 800px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 25px 25px 30px;
+
+}
+
+
+/*
+****
+*****Tab header CSS
+****
+*/
+.tab-header {
+    background: #411934;
+    color: #fff;
+    height: 60px;
+    padding: 17px 0px;
+    position: fixed;
+    width: calc(100% - 255px);
+    z-index: 10;
+}
+
+.tab-header a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.tab-header a > i {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.tab-header h3 {
+    margin-bottom: 0px;
+}
+
+.tab-header h3 a {
+    font-size: 18px;
+}
+
+.tab-content-inner {
+    position: relative;
+    padding-top: 60px;
+}
+
+
+.condition-box {
+    margin-top: -10px;
+}
+
+.condition-box p input[type="radio"]:checked,
+.condition-box p input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.condition-box p input[type="radio"]:checked + label,
+.condition-box p input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 15px;
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.condition-box p input[type="radio"]:checked + label:before,
+.condition-box p input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #018001;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.condition-box p input[type="radio"]:checked + label:after,
+.condition-box p input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #018001;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.condition-box p input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.condition-box p input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.condition-box p {
+    display: block;
+    padding-left: 20px;
+}
+
+.condition-box p input[type="radio"]:checked + label {
+    color: #018001;
+}
+
+
+.heading {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sub-heading {
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tutorial-content ul li {
+    line-height: 25px;
+}
+
+.tutorial-content ul li i {
+    padding-right: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #43AA5C;
+}
+
+.check-condition {
+    border: 1px solid #19B6EE;
+    padding: 20px;
+    background: #E8F8FD;
+}
+
+.check-condition.red {
+    border: 1px solid #ECA918;
+    padding: 20px;
+    background: #FDEAEC;
+}
+
+.check-condition.yellow {
+    border: 1px solid #ED3146;
+    padding: 20px;
+    background: #FDF6E7;
+}
+
+.check-condition label {
+    font-weight: 500;
+    margin: 0px 0 15px;
+    font-size: 16px;
+}
+
+.condition-box p {
+    margin-bottom: 0px;
+}
+
+.next-page-btn,
+.prev-page-btn {
+    background: #411934;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.prev-page-btn {
+    right: auto;
+    left: 300px;
+    bottom: 50px;
+}
+
+.next-page-btn.success {
+    background: #0F9D58;
+}
+
+.next-page-btn i,
+.prev-page-btn i {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    line-height: 47px;
+}
+
+
+
+
+.tab-pane .tutorial-content.animation-left {
+    animation: slide-left 1s ease;
+}
+
+.tab-pane .tutorial-content.animation-right {
+    animation: slide-right 1s ease;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.well.full-width {
+    border: none;
+    border-radius: 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 20px 40px;
+    margin-bottom: 0px;
+}
+
+.well.full-width img {
+    display: inline-block;
+    padding-right: 12px;
+}
+
+.tutorial-footer.full-width {
+    background: #411934;
+    color: #fff;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: -45px;
+    padding: 40px;
+}
+
+.tutorial-footer.full-width form p {
+    margin-bottom: 0px;
+}
+
+.tutorial-footer.full-width p input {
+    border: none;
+    background: #fff;
+    height: 40px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px #0000;
+    margin-right: 10px;
+    width: 320px;
+    color: #000;
+}
+
+.tutorial-footer.full-width p input[type="submit"] {
+    box-shadow: none;
+    background-color: #0E8420;
+    border-radius: 2px;
+    width: auto;
+    color: #fff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000;
+}
