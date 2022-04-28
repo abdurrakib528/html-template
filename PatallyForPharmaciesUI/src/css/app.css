@@ -1,0 +1,978 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #606060;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+@supports not (-ms-high-contrast: none) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .app__footer {
+        margin-top: auto;
+    }
+}
+body.entry {
+    background-color: #f8fbfd;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    button {
+        box-shadow: 0 0 0 0px #0ac;
+    }
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a img {
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #1d1d1f;
+}
+input:focus,
+textarea:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+input[type="date"] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="date"]:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #00b8d9;
+    cursor: pointer;
+}
+
+input[type="date"]:hover:after {
+    color: #00b8d9;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    z-index: 1;
+}
+
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+}
+
+button:focus {
+    outline: none !important;
+}
+.my-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mt-7 {
+    margin-top: 70px;
+}
+.w-47 {
+    width: 470px;
+}
+
+.border-none {
+    border: none !important;
+}
+
+/* App button css----------- */
+.app__btn {
+    color: #1d1d1f;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 12px 32px;
+    border: 1px solid #dadddf;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.app__btn:nth-of-type(2) {
+    margin-left: 24px;
+}
+.app__btn:hover {
+    background-color: #00b8d9;
+    border-color: #00b8d9;
+    color: #fff;
+}
+
+.app__btn em {
+    color: #005eb8;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.app__btn-blue {
+    margin: 0;
+    background: #00b8d9;
+    border: 1px solid #00b8d9;
+    color: #fff;
+}
+
+.app__btn-blue:hover {
+    background: #fff;
+    color: #00b8d9;
+}
+.app__btn-white {
+    background-color: #fff;
+}
+
+/* Mobile app header menu csss------------ */
+.btn-wrapper {
+    width: 100%;
+    border-top: 1px solid #dfe1e6;
+}
+.profile__drawer .app__login-logged .icon {
+    margin: auto;
+}
+.profile__drawer {
+    position: absolute;
+    right: -400px;
+    width: 220px;
+    text-align: center;
+    top: 60px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+.profile__drawer.show {
+    right: 5px;
+}
+
+/* App Header css---------- */
+.app__header {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.entry .app__header {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+    border: none;
+    padding: 0;
+    background-color: #f8fbfd;
+    position: initial;
+}
+.app__header .app__logo img {
+    max-width: 200px;
+}
+.entry .app__header .app__logo img {
+    max-width: 250px;
+}
+
+.app__header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.app__logo a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+.app__header-icon {
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #606060;
+    margin-left: 15px;
+}
+.app__header-icon:hover svg {
+    color: #00b8d9;
+}
+
+/* App content css---------- */
+.entry__login {
+    display: block;
+    height: 40px;
+    margin: auto;
+    width: max-content;
+}
+.entry__login img {
+    height: 100%;
+}
+.entry__login svg {
+    height: 100%;
+    width: 100%;
+}
+
+.prescription-request,
+.prescription-management {
+    background-color: #f8fbfd;
+}
+.app__content-header p {
+    color: #1d1d1f;
+}
+.app__content-header h4 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.16px;
+    margin-bottom: 10px;
+    color: #1d1d1f;
+    font-family: var(--font-family);
+}
+/* App card css------------- */
+.app__card {
+    background: #ffffff;
+}
+.app__card.alice-blue {
+    background: #f8fbfd;
+}
+.app__card.card__border {
+    border: 1px solid #dadddf;
+    border-radius: 4px;
+    padding: 24px;
+}
+.card__shadow {
+    -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 24px;
+}
+.app__card-header p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    margin-bottom: 8px;
+}
+
+.app__card-body h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.16px;
+    margin-bottom: 0px;
+}
+
+.app__card-header h4 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.16px;
+    margin-bottom: 24px;
+    color: #1d1d1f;
+    font-family: var(--font-family);
+}
+.entry .app__card-header h4 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.app__card p {
+    margin-bottom: 5px;
+}
+.app__card .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: #c4c4c4;
+    margin: 0 auto 10px;
+}
+
+.app__card-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: #1d1d1f;
+}
+
+.app__card-form label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    margin-bottom: 0px;
+}
+.app__card-form h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d1d1f;
+    margin-bottom: 0;
+}
+.app__card-form .form-control {
+    max-width: 80%;
+    background: #fafbfc;
+    border: 1px solid #dfe1e6;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-transform: capitalize;
+    color: #606060;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.app__card-form textarea.form-control {
+    max-width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.app__card-form input.form-control:hover,
+.app__card-form input.form-control:focus {
+    -webkit-box-shadow: 0px 0px 5px rgb(0 0 0 / 10%) !important;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%) !important;
+}
+.terms__service {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.terms__service a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #00b8d9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.terms__service a:hover {
+    opacity: 0.8;
+}
+/* Card list item------- */
+.app__list-item {
+    color: #1b3650;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: -0.16px;
+}
+.app__list-item svg {
+    color: #00b8d9;
+    width: 24px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.app__small-para {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #5e6c84;
+    margin-top: 20px;
+}
+
+.app__small-para strong {
+    font-weight: 700;
+}
+
+/* App card table css--------- */
+table.table {
+    margin-bottom: 0px !important;
+}
+
+.app__table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadddf;
+    align-items: center;
+}
+
+.app__table-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.app__table .medicine {
+    width: 50%;
+}
+
+.app__table .status {
+    width: 25%;
+}
+
+.app__table .details {
+    width: 35%;
+}
+.app__table-header h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.app__badge {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.app__badge.issued {
+    background: #d7f0e5;
+    color: #36b37e;
+}
+.app__badge.rejected {
+    background: #ffddd6;
+    color: #ff5630;
+}
+.app__comment {
+    background: #5e6c84;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin: 15px 0px;
+}
+.app__text-muted {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #9e9e9e !important;
+}
+.app__flex-mobile .app__text-muted {
+    font-size: 12px;
+}
+.app__flex-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.app__flex-mobile > *:nth-child(2) {
+    margin-left: 50px;
+}
+
+.app__table-body .table-img {
+    width: 32px !important;
+    height: 32px !important;
+    background: #757575;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.table__body-content {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 15px 8px;
+    cursor: pointer;
+}
+
+.table__body-content:hover,
+.table__body-content.active {
+    background: rgba(54, 179, 126, 0.1);
+}
+.table-checkbox input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    padding: 11px 23px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    outline: 0;
+    background-color: transparent;
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-button__control {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: #017b5f;
+    background: #fafbfc;
+    border: 1px solid #dfe1e6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.table-checkbox.check-icon .checkbox-button__control:after {
+    font-size: 14px !important;
+}
+
+.table-checkbox input:checked + .checkbox-button__control:after {
+    content: "-";
+    color: #fff;
+    position: relative;
+    top: 0px;
+    font-size: 30px;
+}
+.app__table-header .table-checkbox input:checked + .checkbox-button__control:after {
+    top: -2px;
+}
+.table-checkbox.check-icon input:checked + .checkbox-button__control:after {
+    content: "\2713";
+}
+
+.table-checkbox input:checked + .checkbox-button__control {
+    border-color: #36b37e;
+    background-color: #36b37e;
+}
+
+.app__table-body .table-img svg {
+    width: 10px;
+}
+
+.app__table-body h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d1d1f;
+    margin-bottom: 0px;
+}
+
+.app__table-body p {
+    color: #1d1d1f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.app__login h4 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.app__login p {
+    color: #1d1d1f;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.app__login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app__login-logged .icon {
+    width: 50px;
+    height: 50px;
+    background: #eceff1;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.app__card-header h5 {
+    margin-bottom: 15px;
+}
+.app__card-header .small-text {
+    line-height: 120%;
+    color: #606060;
+    text-transform: initial;
+    line-height: 17px;
+    margin: 0px 0px 24px;
+}
+
+.app__card-box {
+    background: #f8fbfd;
+    margin: 8px 0px;
+    padding: 10px;
+    position: relative;
+}
+
+.app__card-box h5 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #606060;
+}
+
+.app__card-box p {
+    margin-bottom: 0px;
+}
+
+.app__card-box.alice-blue {
+    background: #edf5ff;
+    border-left: 3px solid #0043ce;
+    padding-left: 45px;
+}
+
+.notify-icon {
+    position: absolute;
+    left: 15px;
+}
+
+.notify-icon svg {
+    color: #0043ce;
+}
+
+.app__card-box.alice-blue h5 {
+    color: #1d1d1f;
+    margin-bottom: 10px;
+}
+
+.table-checkbox.circle-box label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.table-checkbox.circle-box label .checkbox-button__control {
+    border-radius: 50%;
+}
+.app__loading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app__loading svg {
+    height: 120px;
+    margin-right: 15px;
+}
+
+.app__loading span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00b8d9;
+    display: inline-block;
+    margin: 0px 3px;
+}
+.app__loading span:nth-child(3),
+.app__loading span:nth-child(4),
+.app__loading span:nth-child(5) {
+    background: #ccf1f7;
+}
+
+/* App tab css--------- */
+.app__tabs-container div {
+    transition: all 0.3s ease-in-out;
+}
+
+.tabtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border-bottom: 2px solid #dadddf;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    color: #1d1d1f;
+    flex: 1;
+}
+
+#app__tab-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#app__tab-header.fixed {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    z-index: 8;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.tabtitle.current-tab {
+    border-bottom: 2px solid #00b8d9;
+    color: #00b8d9;
+    cursor: pointer;
+}
+#app__tab-content {
+    overflow: hidden;
+    position: relative;
+}
+
+.tabcontent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    width: 100%;
+    transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.tabcontent:first-child {
+    position: relative;
+}
+.tabcontent.tab-active {
+    display: block;
+    transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+.app__date-picker {
+    width: 60%;
+}
+
+/* App footer css-------- */
+.app__footer {
+    background: #eceff1;
+    padding: 10px 0px;
+    margin-top: auto;
+}
+
+.app__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e6c84;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 15px;
+}
+
+.app__link:after {
+    position: absolute;
+    right: -3px;
+    top: 2px;
+    width: 1px;
+    height: 15px;
+    background: #dadddf;
+    content: "";
+}
+
+.app__link:last-child:after {
+    display: none;
+}
+
+/* IE11 suppport css---------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .app__footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .form-control {
+        padding: 6px 10px 12px;
+    }
+    .row > * {
+        padding: 0px 15px;
+    }
+}
+
+/* App responsive css-------- */
+
+@media only screen and (max-width: 768px) {
+    body,
+    .entry .app__header {
+        background-color: #fff !important;
+    }
+
+    .my-50 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .entry .app__header {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    .app__header .app__logo img {
+        max-width: 150px;
+    }
+
+    .app__content-header h4 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .card__shadow {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .app__list-item {
+        font-size: 14px;
+    }
+    .app__list-item svg {
+        margin-right: 6px;
+        width: 20px;
+        height: 20px;
+    }
+    .app__card-header h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 35px;
+    }
+    .entry .app__card-header h4 {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 0px 0px 20px;
+    }
+    .app__card-form .form-control {
+        max-width: 100%;
+    }
+    .app__link {
+        padding: 0px 12px;
+    }
+    .app__card-title {
+        font-size: 20px;
+    }
+    .app__btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .app__btn:nth-of-type(2) {
+        margin-left: 10px;
+    }
+    .app__header .app__logo img {
+        max-width: 130px;
+    }
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./src/images/favicon.png" />
+        <title>Patally for Pharmacies</title>
+
+        <!--Bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!--Custom css -->
+        <link rel="stylesheet" href="./src/css/app.css" type="text/css" />
+    </head>
+    <body>
+        <!--Header-->
+        <header class="app__header">
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#">
+                            <svg
+                                width="228"
+                                height="28"
+                                viewBox="0 0 228 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_126_1380)">
+                                    <path
+                                        d="M23.5024 15.1713V20.0884H21.217V6.53516H25.7793C28.6637 6.53516 30.4742 8.26881 30.4742 10.8532C30.4742 13.4377 28.6637 15.1713 25.7793 15.1713H23.5024ZM25.6323 8.46229H23.5024V13.2543H25.6323C27.2587 13.2543 28.1779 12.3149 28.1779 10.8532C28.1779 9.39163 27.2587 8.46229 25.6323 8.46229V8.46229Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path
+                                        d="M35.8069 9.82666C37.2685 9.82666 38.4885 10.4367 39.3309 11.4243V10.059H41.5275V20.0884H39.3309V18.7366C38.486 19.7149 37.2685 20.3249 35.8069 20.3249C32.98 20.3249 30.9067 18.0007 30.9067 15.0775C30.9067 12.1543 32.98 9.82666 35.8069 9.82666ZM36.2446 18.3522C38.007 18.3522 39.3334 16.9007 39.3334 15.0707C39.3334 13.2407 38.0238 11.7927 36.2446 11.7927C34.4653 11.7927 33.1473 13.2543 33.1473 15.0741C33.1473 16.8939 34.4805 18.3522 36.2446 18.3522Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path
+                                        d="M46.4269 16.747C46.4269 17.8605 46.911 18.3927 48.1698 18.3927C48.4802 18.3923 48.7904 18.3762 49.0992 18.3446V19.9709C48.7021 20.194 48.0853 20.3199 47.4939 20.3199C45.3818 20.3199 44.2218 19.1869 44.2218 16.8441V11.9955H42.293V10.059H44.2201V7.65877L46.4269 7.15186V10.0556H48.9826V11.9921H46.4269V16.747Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path
+                                        d="M54.5012 9.82666C55.9628 9.82666 57.1828 10.4367 58.0251 11.4243V10.059H60.2218V20.0884H58.0251V18.7366C57.1803 19.7149 55.9628 20.3249 54.5012 20.3249C51.6743 20.3249 49.601 18.0007 49.601 15.0775C49.601 12.1543 51.6743 9.82666 54.5012 9.82666ZM54.9363 18.3598C56.6987 18.3598 58.0251 16.9083 58.0251 15.0783C58.0251 13.2484 56.7181 11.7969 54.9363 11.7969C53.1545 11.7969 51.8382 13.2585 51.8382 15.0783C51.8382 16.8982 53.1748 18.3522 54.9363 18.3522V18.3598Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path d="M62.3914 5.95459H64.5981V20.0883H62.3914V5.95459Z" fill="#158BDE" />
+                                    <path d="M66.9131 5.95459H69.1199V20.0883H66.9131V5.95459Z" fill="#158BDE" />
+                                    <path
+                                        d="M72.1876 24.5806L73.9618 20.0698L70.1641 10.0591H72.4689L75.0728 17.2717L77.6918 10.0591H80L74.5016 24.5806H72.1876Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path
+                                        d="M0.0481647 20.4162C0.0321123 20.101 0.0126805 19.8847 0.0118356 19.6676C0.0118356 17.0266 -0.0177346 14.3838 0.0185945 11.7428C0.0625273 8.49599 1.51653 5.98506 4.29867 4.3663C7.10868 2.73065 10.048 2.74924 12.8884 4.33082C16.0744 6.10503 17.7607 9.8106 17.0983 13.3176C16.3946 17.035 13.4739 19.84 9.74803 20.3587C9.34758 20.4044 8.94451 20.423 8.54156 20.4145C5.97994 20.4184 3.41888 20.4184 0.858388 20.4145L0.0481647 20.4162ZM3.5366 16.9522C3.63744 16.9775 3.74038 16.9937 3.84413 17.0004C5.51696 17.0004 7.19232 17.0477 8.86346 16.9877C11.1657 16.9032 13.2187 15.1645 13.6842 12.9966C14.29 10.1764 12.6501 7.49314 9.868 6.75135C8.56328 6.41006 7.17646 6.60037 6.01192 7.28053C4.84739 7.96069 4.00029 9.07511 3.65657 10.3792C3.10234 12.4989 3.41156 14.7015 3.46394 16.8711C3.46394 16.8889 3.48844 16.9032 3.5366 16.9556V16.9522Z"
+                                        fill="#158BDE"
+                                    />
+                                    <path
+                                        d="M1.73115 24.8577C2.64756 24.8577 3.39046 24.1148 3.39046 23.1984C3.39046 22.282 2.64756 21.5391 1.73115 21.5391C0.814737 21.5391 0.0718384 22.282 0.0718384 23.1984C0.0718384 24.1148 0.814737 24.8577 1.73115 24.8577Z"
+                                        fill="#158BDE"
+                                    />
+                                </g>
+                                <path
+                                    d="M92.156 13.012H90.5V20.5H87.422V13.012H86.306V10.456H87.422V10.168C87.422 8.932 87.776 7.996 88.484 7.36C89.192 6.712 90.23 6.388 91.598 6.388C91.826 6.388 91.994 6.394 92.102 6.406V9.016C91.514 8.98 91.1 9.064 90.86 9.268C90.62 9.472 90.5 9.838 90.5 10.366V10.456H92.156V13.012ZM98.1743 20.644C97.1903 20.644 96.3023 20.434 95.5103 20.014C94.7303 19.594 94.1123 18.994 93.6563 18.214C93.2123 17.434 92.9903 16.522 92.9903 15.478C92.9903 14.446 93.2183 13.54 93.6743 12.76C94.1303 11.968 94.7543 11.362 95.5463 10.942C96.3383 10.522 97.2263 10.312 98.2103 10.312C99.1943 10.312 100.082 10.522 100.874 10.942C101.666 11.362 102.29 11.968 102.746 12.76C103.202 13.54 103.43 14.446 103.43 15.478C103.43 16.51 103.196 17.422 102.728 18.214C102.272 18.994 101.642 19.594 100.838 20.014C100.046 20.434 99.1583 20.644 98.1743 20.644ZM98.1743 17.98C98.7623 17.98 99.2603 17.764 99.6683 17.332C100.088 16.9 100.298 16.282 100.298 15.478C100.298 14.674 100.094 14.056 99.6863 13.624C99.2903 13.192 98.7983 12.976 98.2103 12.976C97.6103 12.976 97.1123 13.192 96.7163 13.624C96.3203 14.044 96.1223 14.662 96.1223 15.478C96.1223 16.282 96.3143 16.9 96.6983 17.332C97.0943 17.764 97.5863 17.98 98.1743 17.98ZM108.141 12.13C108.501 11.578 108.951 11.146 109.491 10.834C110.031 10.51 110.631 10.348 111.291 10.348V13.606H110.445C109.677 13.606 109.101 13.774 108.717 14.11C108.333 14.434 108.141 15.01 108.141 15.838V20.5H105.063V10.456H108.141V12.13ZM126.207 11.932C126.207 12.664 126.039 13.336 125.703 13.948C125.367 14.548 124.851 15.034 124.155 15.406C123.459 15.778 122.595 15.964 121.563 15.964H119.655V20.5H116.577V7.864H121.563C122.571 7.864 123.423 8.038 124.119 8.386C124.815 8.734 125.337 9.214 125.685 9.826C126.033 10.438 126.207 11.14 126.207 11.932ZM121.329 13.516C121.917 13.516 122.355 13.378 122.643 13.102C122.931 12.826 123.075 12.436 123.075 11.932C123.075 11.428 122.931 11.038 122.643 10.762C122.355 10.486 121.917 10.348 121.329 10.348H119.655V13.516H121.329ZM133.983 10.348C135.135 10.348 136.059 10.732 136.755 11.5C137.451 12.256 137.799 13.3 137.799 14.632V20.5H134.739V15.046C134.739 14.374 134.565 13.852 134.217 13.48C133.869 13.108 133.401 12.922 132.813 12.922C132.225 12.922 131.757 13.108 131.409 13.48C131.061 13.852 130.887 14.374 130.887 15.046V20.5H127.809V7.18H130.887V11.806C131.199 11.362 131.625 11.008 132.165 10.744C132.705 10.48 133.311 10.348 133.983 10.348ZM139.326 15.46C139.326 14.428 139.518 13.522 139.902 12.742C140.298 11.962 140.832 11.362 141.504 10.942C142.176 10.522 142.926 10.312 143.754 10.312C144.462 10.312 145.08 10.456 145.608 10.744C146.148 11.032 146.562 11.41 146.85 11.878V10.456H149.928V20.5H146.85V19.078C146.55 19.546 146.13 19.924 145.59 20.212C145.062 20.5 144.444 20.644 143.736 20.644C142.92 20.644 142.176 20.434 141.504 20.014C140.832 19.582 140.298 18.976 139.902 18.196C139.518 17.404 139.326 16.492 139.326 15.46ZM146.85 15.478C146.85 14.71 146.634 14.104 146.202 13.66C145.782 13.216 145.266 12.994 144.654 12.994C144.042 12.994 143.52 13.216 143.088 13.66C142.668 14.092 142.458 14.692 142.458 15.46C142.458 16.228 142.668 16.84 143.088 17.296C143.52 17.74 144.042 17.962 144.654 17.962C145.266 17.962 145.782 17.74 146.202 17.296C146.634 16.852 146.85 16.246 146.85 15.478ZM155.233 12.13C155.593 11.578 156.043 11.146 156.583 10.834C157.123 10.51 157.723 10.348 158.383 10.348V13.606H157.537C156.769 13.606 156.193 13.774 155.809 14.11C155.425 14.434 155.233 15.01 155.233 15.838V20.5H152.155V10.456H155.233V12.13ZM172.67 10.348C173.918 10.348 174.908 10.726 175.64 11.482C176.384 12.238 176.756 13.288 176.756 14.632V20.5H173.696V15.046C173.696 14.398 173.522 13.9 173.174 13.552C172.838 13.192 172.37 13.012 171.77 13.012C171.17 13.012 170.696 13.192 170.348 13.552C170.012 13.9 169.844 14.398 169.844 15.046V20.5H166.784V15.046C166.784 14.398 166.61 13.9 166.262 13.552C165.926 13.192 165.458 13.012 164.858 13.012C164.258 13.012 163.784 13.192 163.436 13.552C163.1 13.9 162.932 14.398 162.932 15.046V20.5H159.854V10.456H162.932V11.716C163.244 11.296 163.652 10.966 164.156 10.726C164.66 10.474 165.23 10.348 165.866 10.348C166.622 10.348 167.294 10.51 167.882 10.834C168.482 11.158 168.95 11.62 169.286 12.22C169.634 11.668 170.108 11.218 170.708 10.87C171.308 10.522 171.962 10.348 172.67 10.348ZM178.297 15.46C178.297 14.428 178.489 13.522 178.873 12.742C179.269 11.962 179.803 11.362 180.475 10.942C181.147 10.522 181.897 10.312 182.725 10.312C183.433 10.312 184.051 10.456 184.579 10.744C185.119 11.032 185.533 11.41 185.821 11.878V10.456H188.899V20.5H185.821V19.078C185.521 19.546 185.101 19.924 184.561 20.212C184.033 20.5 183.415 20.644 182.707 20.644C181.891 20.644 181.147 20.434 180.475 20.014C179.803 19.582 179.269 18.976 178.873 18.196C178.489 17.404 178.297 16.492 178.297 15.46ZM185.821 15.478C185.821 14.71 185.605 14.104 185.173 13.66C184.753 13.216 184.237 12.994 183.625 12.994C183.013 12.994 182.491 13.216 182.059 13.66C181.639 14.092 181.429 14.692 181.429 15.46C181.429 16.228 181.639 16.84 182.059 17.296C182.491 17.74 183.013 17.962 183.625 17.962C184.237 17.962 184.753 17.74 185.173 17.296C185.605 16.852 185.821 16.246 185.821 15.478ZM190.514 15.478C190.514 14.434 190.724 13.522 191.144 12.742C191.576 11.962 192.17 11.362 192.926 10.942C193.694 10.522 194.57 10.312 195.554 10.312C196.814 10.312 197.864 10.642 198.704 11.302C199.556 11.962 200.114 12.892 200.378 14.092H197.102C196.826 13.324 196.292 12.94 195.5 12.94C194.936 12.94 194.486 13.162 194.15 13.606C193.814 14.038 193.646 14.662 193.646 15.478C193.646 16.294 193.814 16.924 194.15 17.368C194.486 17.8 194.936 18.016 195.5 18.016C196.292 18.016 196.826 17.632 197.102 16.864H200.378C200.114 18.04 199.556 18.964 198.704 19.636C197.852 20.308 196.802 20.644 195.554 20.644C194.57 20.644 193.694 20.434 192.926 20.014C192.17 19.594 191.576 18.994 191.144 18.214C190.724 17.434 190.514 16.522 190.514 15.478ZM203.572 9.412C203.032 9.412 202.588 9.256 202.24 8.944C201.904 8.62 201.736 8.224 201.736 7.756C201.736 7.276 201.904 6.88 202.24 6.568C202.588 6.244 203.032 6.082 203.572 6.082C204.1 6.082 204.532 6.244 204.868 6.568C205.216 6.88 205.39 7.276 205.39 7.756C205.39 8.224 205.216 8.62 204.868 8.944C204.532 9.256 204.1 9.412 203.572 9.412ZM205.102 10.456V20.5H202.024V10.456H205.102ZM216.801 15.316C216.801 15.604 216.783 15.904 216.747 16.216H209.781C209.829 16.84 210.027 17.32 210.375 17.656C210.735 17.98 211.173 18.142 211.689 18.142C212.457 18.142 212.991 17.818 213.291 17.17H216.567C216.399 17.83 216.093 18.424 215.649 18.952C215.217 19.48 214.671 19.894 214.011 20.194C213.351 20.494 212.613 20.644 211.797 20.644C210.813 20.644 209.937 20.434 209.169 20.014C208.401 19.594 207.801 18.994 207.369 18.214C206.937 17.434 206.721 16.522 206.721 15.478C206.721 14.434 206.931 13.522 207.351 12.742C207.783 11.962 208.383 11.362 209.151 10.942C209.919 10.522 210.801 10.312 211.797 10.312C212.769 10.312 213.633 10.516 214.389 10.924C215.145 11.332 215.733 11.914 216.153 12.67C216.585 13.426 216.801 14.308 216.801 15.316ZM213.651 14.506C213.651 13.978 213.471 13.558 213.111 13.246C212.751 12.934 212.301 12.778 211.761 12.778C211.245 12.778 210.807 12.928 210.447 13.228C210.099 13.528 209.883 13.954 209.799 14.506H213.651ZM222.511 20.644C221.635 20.644 220.855 20.494 220.171 20.194C219.487 19.894 218.947 19.486 218.551 18.97C218.155 18.442 217.933 17.854 217.885 17.206H220.927C220.963 17.554 221.125 17.836 221.413 18.052C221.701 18.268 222.055 18.376 222.475 18.376C222.859 18.376 223.153 18.304 223.357 18.16C223.573 18.004 223.681 17.806 223.681 17.566C223.681 17.278 223.531 17.068 223.231 16.936C222.931 16.792 222.445 16.636 221.773 16.468C221.053 16.3 220.453 16.126 219.973 15.946C219.493 15.754 219.079 15.46 218.731 15.064C218.383 14.656 218.209 14.11 218.209 13.426C218.209 12.85 218.365 12.328 218.677 11.86C219.001 11.38 219.469 11.002 220.081 10.726C220.705 10.45 221.443 10.312 222.295 10.312C223.555 10.312 224.545 10.624 225.265 11.248C225.997 11.872 226.417 12.7 226.525 13.732H223.681C223.633 13.384 223.477 13.108 223.213 12.904C222.961 12.7 222.625 12.598 222.205 12.598C221.845 12.598 221.569 12.67 221.377 12.814C221.185 12.946 221.089 13.132 221.089 13.372C221.089 13.66 221.239 13.876 221.539 14.02C221.851 14.164 222.331 14.308 222.979 14.452C223.723 14.644 224.329 14.836 224.797 15.028C225.265 15.208 225.673 15.508 226.021 15.928C226.381 16.336 226.567 16.888 226.579 17.584C226.579 18.172 226.411 18.7 226.075 19.168C225.751 19.624 225.277 19.984 224.653 20.248C224.041 20.512 223.327 20.644 222.511 20.644Z"
+                                    fill="#263238"
+                                />
+                                <defs>
+                                    <clipPath id="clip0_126_1380">
+                                        <rect
+                                            width="80"
+                                            height="21.7155"
+                                            fill="white"
+                                            transform="translate(0 3.14209)"
+                                        />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#signup" class="app__btn"><span>Register for&nbsp;</span>pre-launch </a>
+                </div>
+            </div>
+        </header>
+        <!--Header-->
+
+        <!--Section hero-->
+        <section class="app__hero">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="h1 mb-20"><span>Patally</span> for <span>Pharmacies</span></h1>
+                    <h2 class="h2 mb-30">Helping you serve your patients better</h2>
+                    <a href="#signup" class="app__btn app__btn-dark mb-30">Get 50% Pre-launch Discount</a>
+                    <ul class="app__list d-flex justify-content-center">
+                        <li class="app__list-item">
+                            <svg viewBox="0 0 18 16" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M1.91207 6.17377L6.57045 9.76773C6.57045 9.76773 11.6504 3.71097 17.018 0.472168L18 1.85529C18 1.85529 9.05751 9.32191 7.33004 15.7078L0 8.02534L1.91266 6.17457L1.91207 6.17377Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                            <img src="./src/images/nhs.png" alt="NHS logo" />
+                            assured
+                        </li>
+                        <li class="app__list-item">
+                            <svg viewBox="0 0 18 16" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M1.91207 6.17377L6.57045 9.76773C6.57045 9.76773 11.6504 3.71097 17.018 0.472168L18 1.85529C18 1.85529 9.05751 9.32191 7.33004 15.7078L0 8.02534L1.91266 6.17457L1.91207 6.17377Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                            No download
+                        </li>
+                        <li class="app__list-item">
+                            <svg viewBox="0 0 18 16" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M1.91207 6.17377L6.57045 9.76773C6.57045 9.76773 11.6504 3.71097 17.018 0.472168L18 1.85529C18 1.85529 9.05751 9.32191 7.33004 15.7078L0 8.02534L1.91266 6.17457L1.91207 6.17377Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                            Available on mobile and desktop
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Section hero-->
+
+        <!--section hover-->
+        <section class="app__hover">
+            <div class="overlay-bg-left"></div>
+            <div class="overlay-bg-right"></div>
+
+            <div class="app__hover-content">
+                <div class="app__hover-images">
+                    <div class="app__hover-image patients">
+                        <div class="d-flex justify-content-center">
+                            <div class="hover__content-info patients">
+                                <div class="info">
+                                    <img src="./src/images/icons/cloud.png" alt="Cloud" />
+                                    <h4>Nothing to download</h4>
+                                    <p>Everything is cloud based</p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/nhs.png" alt="nhs" />
+                                    <h4>NHS login</h4>
+                                    <p>Your patients just logs in with existing NHS account and start ordering</p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/hand.png" alt="hand" />
+                                    <h4>Order repeat with one-click</h4>
+                                    <p>
+                                        Our simple interface allows your patients to place an order with just one click
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/bell.png" alt="bell" />
+                                    <h4>Get notified when order is ready</h4>
+                                    <p>Your patients can track order status and get notified when it’s ready</p>
+                                </div>
+                            </div>
+                            <div class="hover__figure">
+                                <h2 class="h2 orange mb-30">For your patients</h2>
+                                <img
+                                    class="hover-img-mobile desktop"
+                                    src="./src/images/desktop/mobile-white.png"
+                                    alt="Mobile"
+                                />
+                                <img
+                                    class="version-img-mobile mobile"
+                                    src="./src/images/desktop/mobile-version.png"
+                                    alt="Mobile"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app__hover-image foryou">
+                        <div class="d-flex justify-content-between">
+                            <div class="hover__figure">
+                                <h2 class="h2 blue mb-30">For you</h2>
+                                <img
+                                    class="hover-img-tablet desktop"
+                                    src="./src/images/desktop/tablet.png"
+                                    alt="Tablet"
+                                />
+                                <img
+                                    class="version-img-mobile mobile"
+                                    src="./src/images/desktop/mobile-tablet.png"
+                                    alt="Mobile"
+                                />
+                            </div>
+
+                            <div class="hover__content-info foryou">
+                                <div class="info">
+                                    <img src="./src/images/icons/setting.png" alt="Setting" />
+                                    <h4>5 minutes setup</h4>
+                                    <p>You don’t need to code anything</p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/brand.png" alt="brand" />
+                                    <h4>Branded solution</h4>
+                                    <p>
+                                        We will customize the system styles with your brand guideline to ensure
+                                        consistent experience for your patient
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/bell.png" alt="bell" />
+                                    <h4>Get notified at the same time as GP</h4>
+                                    <p>When your patients make orders, you will be notified at the same time as GP</p>
+                                </div>
+                                <div class="info">
+                                    <img src="./src/images/icons/update.png" alt="update" />
+                                    <h4>Update order status within one-click</h4>
+                                    <p>Simply update order status within one-click from dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section hover-->
+
+        <!--Patient section-->
+        <section class="app__scenes">
+            <div class="container">
+                <div class="scenes__wrap">
+                    <div class="scenes__items">
+                        <h1 class="orange mb-20">For your patients</h1>
+                        <h2 class="h2 mb-30">
+                            Your patients order repeat prescription directly from your <span>branded site</span>
+                        </h2>
+                        <div class="scene">
+                            <div class="scene__grid">
+                                <div class="text-wrapper">
+                                    <div class="scene__header">
+                                        <h3 class="scene__title blue-box">
+                                            <span>1</span>
+                                            Open a link on your website
+                                        </h3>
+                                    </div>
+
+                                    <div class="scene__header">
+                                        <h3 class="scene__title orange-box">
+                                            <span>2</span>
+                                            Log in with your NHS account
+                                        </h3>
+                                    </div>
+                                    <div class="scene__header">
+                                        <h3 class="scene__title slate-box">
+                                            <span>3</span>
+                                            Automatically sync available prescription information in the dashboard
+                                        </h3>
+                                    </div>
+                                    <div class="scene__header">
+                                        <h3 class="scene__title blue-box">
+                                            <span>4</span>
+                                            Order repeat prescription
+                                        </h3>
+                                        <p>
+                                            The request will be sent to the Surgery and you will receive a notification
+                                            with order-id
+                                        </p>
+                                    </div>
+                                    <div class="scene__header">
+                                        <h3 class="scene__title orange-box">
+                                            <span>5</span>
+                                            Review order status
+                                        </h3>
+                                        <p>
+                                            Patient can come back to the dashboard anytime to review the latest order
+                                            status. When order is available to collect, we will let them know.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="image-wrapper">
+                                    <div class="scene__prop"></div>
+                                    <figure class="scene__figure">
+                                        <img src="./src/images/patient/s1.png" alt="s1" />
+                                    </figure>
+                                    <figure class="scene__figure">
+                                        <img src="./src/images/patient/s2.png" alt="s2" />
+                                    </figure>
+                                    <figure class="scene__figure">
+                                        <img src="./src/images/patient/s3.png" alt="s1" />
+                                    </figure>
+                                    <figure class="scene__figure">
+                                        <img src="./src/images/patient/s4.png" alt="s2" />
+                                    </figure>
+                                    <figure class="scene__figure">
+                                        <img src="./src/images/patient/s5.png" alt="s1" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--For you-->
+        <section class="app__foryou">
+            <div class="header__text text-center mb-30">
+                <h1 class="blue mb-20">For you</h1>
+                <h2 class="h2">You can manage orders easily and efficiently in <strong>Patally Dashboard</strong></h2>
+            </div>
+            <div class="foryou__box">
+                <div class="box__left">
+                    <img src="./src/images/you/1.gif" alt="p1" />
+                </div>
+                <div class="box__right">
+                    <div class="box">
+                        <img src="./src/images/you/bell.png" alt="bell" />
+                        <h2 class="h2 mb-20">
+                            <span class="blue">Get notified</span>
+                            at the same time as GP
+                        </h2>
+                        <p>
+                            When a patient makes a repeat prescription request, you will be notified at the same time as
+                            the GP, giving you good lead time to prepare the order
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="foryou__box">
+                <div class="box__left">
+                    <img src="./src/images/you/2.gif" alt="p1" />
+                </div>
+                <div class="box__right">
+                    <div class="box">
+                        <img src="./src/images/you/click.png" alt="refresh" />
+                        <h2 class="h2 mb-20">
+                            <span class="blue">Update order status</span>
+                            within one click
+                        </h2>
+                        <p>
+                            You can identity items easily from the dashboard, track and update order status when it’s
+                            ready to collect
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app__devices">
+            <div class="container">
+                <img class="desktop" src="./src/images/you/screens.png" alt="screen" />
+                <img class="mobile" src="./src/images/you/screens-mobile.png" alt="screen" />
+            </div>
+        </section>
+        <section id="signup" class="app__signup snap-section">
+            <div class="container d-flex justify-content-center">
+                <div class="signup">
+                    <h1 class="mb-30">
+                        Sign-up today for<br />
+                        <span class="blue">50%</span> pre-launch discount
+                    </h1>
+                    <p class="mb-30">Enter your email address below and we will contact you shortly</p>
+                    <form method="post" action="#" class="app__signup-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" />
+                            <button type="submit" class="app__btn">Register for pre-launch</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="thankyou" style="display: none">
+                    <h2 class="h2 mb-30">Thank you for your interest!</h2>
+                    <img src="./src/images/icons/thankyou.png" alt="Thankyou" />
+                    <p class="mb-1">We will get in touch with you shortly.</p>
+                    <p class="mb-30">
+                        Would you take 3 minutes to help us understand your needs and improve our product feature?
+                    </p>
+                    <button type="button" class="app__btn">Start 3-minute survey</button>
+                </div>
+            </div>
+        </section>
+        <!--For you==-->
+
+        <!--Footer-->
+        <footer class="app__footer">
+            <div class="container d-flex justify-content-between">
+                <div class="footer-left">
+                    <p>© Copyright 2019-2021 Patally. All Rights Reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <!--Footer-->
+
+        <!--Scripts-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js"></script>
+        <script src="./src/js/app.js"></script>
+    </body>
+</html>

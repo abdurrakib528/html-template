@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Check information</title>
+        <!-- Google fonts------- -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap css------>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- app custom css------ -->
+        <link rel="stylesheet" href="./src/css/app.css" />
+    </head>
+    <body>
+        <!-- Header------>
+        <header class="app__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="app__logo d-none d-sm-inline-block">
+                            <a href="#">
+                                <img src="./src/images/logopharmacy.svg" alt="Pharmacy logo" />
+                            </a>
+                        </h1>
+                        <div class="app__header-mobile d-sm-none">
+                            <h1 class="app__logo">
+                                <a href="#">
+                                    <img src="./src/images/logopharmacy.svg" alt="Pharmacy logo" />
+                                </a>
+                            </h1>
+                            <div class="app__header-icon" id="toggleProfile">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="currentColor"
+                                        fill-opacity="0.87"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile__drawer">
+                <div class="app__card card__border p-0">
+                    <div class="app__card-body">
+                        <div class="app__login d-flex flex-column">
+                            <div class="app__login-logged p-3">
+                                <div class="icon mb-3">
+                                    <svg
+                                        width="36"
+                                        height="32"
+                                        viewBox="0 0 36 32"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            opacity="0.5"
+                                            d="M13.923 23.7144H6.64839C7.00484 22.7048 7.76476 21.8885 8.74631 21.4612C9.72808 21.0342 10.8433 21.0342 11.8251 21.4612C12.8066 21.8886 13.5666 22.7048 13.923 23.7144ZM10.2857 14.7144C10.6267 14.7144 10.9538 14.5789 11.1949 14.3379C11.436 14.0968 11.5714 13.7696 11.5714 13.4287C11.5714 13.0877 11.436 12.7606 11.1949 12.5195C10.9538 12.2784 10.6267 12.143 10.2857 12.143C9.94477 12.143 9.6176 12.2784 9.37653 12.5195C9.13546 12.7606 9 13.0877 9 13.4287C9 13.7696 9.13546 14.0968 9.37653 14.3379C9.6176 14.5789 9.94477 14.7144 10.2857 14.7144ZM36 7.00011V28.8573C36 29.5391 35.7291 30.1932 35.2469 30.6756C34.7645 31.1578 34.1104 31.4287 33.4286 31.4287H2.57143C1.88954 31.4287 1.23546 31.1578 0.753061 30.6756C0.270918 30.1932 0 29.5391 0 28.8573V3.14297C0 2.46109 0.270918 1.807 0.753061 1.3246C1.23549 0.84246 1.88956 0.571541 2.57143 0.571541H13.6102C14.2927 0.569819 14.9473 0.841027 15.4283 1.3249L18.5321 4.42868H33.428C34.1099 4.42868 34.764 4.6996 35.2463 5.18175C35.7285 5.66417 35.9994 6.31824 35.9994 7.00011H36ZM21.2143 13.4287C21.2143 13.7696 21.3497 14.0968 21.5908 14.3379C21.8319 14.5789 22.1591 14.7144 22.5 14.7144H23.7857V16.0001C23.7857 16.4596 24.0308 16.884 24.4286 17.1136C24.8263 17.3432 25.3165 17.3432 25.7143 17.1136C26.112 16.884 26.3571 16.4596 26.3571 16.0001V14.7144H27.6429C28.1023 14.7144 28.5268 14.4693 28.7564 14.0715C28.986 13.6738 28.986 13.1836 28.7564 12.7858C28.5268 12.3881 28.1023 12.143 27.6429 12.143H26.3571V10.8573C26.3571 10.3978 26.1121 9.97334 25.7143 9.74375C25.3165 9.51416 24.8263 9.51416 24.4286 9.74375C24.0308 9.97334 23.7857 10.3978 23.7857 10.8573V12.143H22.5C22.1591 12.143 21.8319 12.2784 21.5908 12.5195C21.3497 12.7606 21.2143 13.0877 21.2143 13.4287ZM6.42857 13.4287C6.42857 14.4518 6.83495 15.4327 7.55816 16.1562C8.28167 16.8795 9.26258 17.2858 10.2857 17.2858C11.3088 17.2858 12.2897 16.8795 13.0133 16.1562C13.7365 15.4327 14.1429 14.4518 14.1429 13.4287C14.1429 12.4055 13.7365 11.4247 13.0133 10.7011C12.2898 9.97791 11.3088 9.57154 10.2857 9.57154C9.26258 9.57154 8.28169 9.97791 7.55816 10.7011C6.83495 11.4246 6.42857 12.4055 6.42857 13.4287ZM16.7143 25.0001C16.7143 22.7033 15.4891 20.5811 13.5 19.4328C11.5109 18.2846 9.06054 18.2846 7.07143 19.4328C5.08232 20.5811 3.85714 22.7034 3.85714 25.0001C3.85714 25.3411 3.99261 25.6682 4.23367 25.9093C4.47474 26.1504 4.80192 26.2858 5.14286 26.2858H15.4286C15.7695 26.2858 16.0967 26.1504 16.3378 25.9093C16.5788 25.6682 16.7143 25.3411 16.7143 25.0001ZM32.1429 25.0001C32.1429 24.6592 32.0074 24.332 31.7663 24.0909C31.5253 23.8499 31.1981 23.7144 30.8571 23.7144H19.2857C18.8262 23.7144 18.4018 23.9595 18.1722 24.3573C17.9426 24.755 17.9426 25.2452 18.1722 25.643C18.4018 26.0407 18.8263 26.2858 19.2857 26.2858H30.8571C31.1981 26.2858 31.5253 26.1504 31.7663 25.9093C32.0074 25.6682 32.1429 25.3411 32.1429 25.0001ZM32.1429 21.143C32.1429 20.802 32.0074 20.4749 31.7663 20.2338C31.5253 19.9927 31.1981 19.8573 30.8571 19.8573H19.2857C18.8262 19.8573 18.4018 20.1023 18.1722 20.5001C17.9426 20.8979 17.9426 21.3881 18.1722 21.7858C18.4018 22.1836 18.8263 22.4287 19.2857 22.4287H30.8571C31.1981 22.4287 31.5253 22.2932 31.7663 22.0522C32.0074 21.8111 32.1429 21.4839 32.1429 21.143Z"
+                                            fill="#5E6C84"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="mb-2">logged in</h4>
+                                    <p>Stephanie H. Adams</p>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper p-3">
+                                <button type="button" class="app__btn app__btn-white">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header------>
+
+        <!--Content------>
+        <div class="app__content my-50">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-10 col-md-8 col-lg-6">
+                        <div class="app__card">
+                            <div class="app__card-header">
+                                <p class="text-uppercase">Account setup</p>
+                                <h4>Check your information</h4>
+                            </div>
+                            <div class="app__card-body">
+                                <p>NHS Login provided the details below.</p>
+                                <p class="mb-3">
+                                    Please check if your last name and date of birth are correct before continue
+                                </p>
+                                <form class="app__card-form" method="post" action="#">
+                                    <div class="mb-3">
+                                        <label for="surename" class="form-label">Your Surname</label>
+                                        <h4>Reid</h4>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="dob" class="form-label">Date of Birth</label>
+                                        <h4>6 Apr 1958</h4>
+                                    </div>
+                                    <button type="button" class="app__btn app__btn-blue mb-3">Continue</button>
+                                    <button type="button" class="app__btn app__btn-outline mb-3">Cancel</button>
+                                    <p class="terms__service">
+                                        By clicking continue, I accept the Patally
+                                        <a href="#">Privacy Policy</a> and acknowledge the
+                                        <a href="#">Terms of Use</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Content------>
+
+        <!-- Footer------->
+        <footer class="app__footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="app__link">Privacy Policy</a>
+                        <a href="#" class="app__link">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer------->
+
+        <script src="./src/js/app.js"></script>
+    </body>
+</html>
